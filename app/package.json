@@ -6,6 +6,7 @@
   "author": "Romain Fromi <romain@game-park.com> (https://game-park.com/)",
   "license": "ISC",
   "dependencies": {
+    "@emotion/babel-preset-css-prop": "^11.2.0",
     "@emotion/react": "^11.1.5",
     "@gamepark/react-client": "^3.1.0",
     "@gamepark/react-components": "^3.1.0",
@@ -15,12 +16,18 @@
     "@types/jest": "^26.0.15",
     "@types/node": "^12.0.0",
     "@types/react": "^17.0.0",
+    "@types/react-dnd-multi-backend": "^6.0.0",
     "@types/react-dom": "^17.0.0",
+    "@types/react-redux": "^7.1.16",
+    "customize-cra": "^1.0.0",
     "emotion-normalize": "^11.0.1",
     "i18next": "^19.9.1",
     "i18next-icu": "^2.0.2",
+    "imagemin-webp-webpack-plugin": "^3.3.3",
     "intl-messageformat": "^9.5.2",
     "react": "^17.0.1",
+    "react-app-rewire-alias": "^1.0.1",
+    "react-app-rewired": "^2.1.8",
     "react-dnd": "^13.1.1",
     "react-dnd-html5-backend": "^12.1.1",
     "react-dnd-multi-backend": "^6.0.2",
@@ -29,7 +36,6 @@
     "react-i18next": "^11.8.8",
     "react-redux": "^7.2.2",
     "react-scripts": "4.0.3",
-    "typescript": "^4.1.2",
     "web-vitals": "^1.0.1"
   },
   "scripts": {
@@ -55,14 +61,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "@emotion/babel-preset-css-prop": "^11.2.0",
-    "@types/react-dnd-multi-backend": "^6.0.0",
-    "@types/react-redux": "^7.1.16",
-    "customize-cra": "^1.0.0",
-    "imagemin-webp-webpack-plugin": "^3.3.3",
-    "react-app-rewire-alias": "^1.0.1",
-    "react-app-rewired": "^2.1.8"
   }
 }
