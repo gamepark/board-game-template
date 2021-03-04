@@ -1,13 +1,14 @@
-import './App.css'
+import {css} from '@emotion/react'
 import {useTranslation} from 'react-i18next'
+import './App.css'
 import logo from './logo.svg'
 
-function App() {
+export default function App() {
   const {t} = useTranslation()
   return (
-    <div className="App">
+    <div className="App" css={css`position: absolute; width: 100%`}>
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <img src={logo} className="App-logo" alt="logo"/>
         <p>
           {t('Game loading…')}
         </p>
@@ -21,7 +22,5 @@ function App() {
         </a>
       </header>
     </div>
-  );
+  )
 }
-
-export default App;

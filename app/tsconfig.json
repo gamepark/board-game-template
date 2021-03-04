@@ -8,6 +8,7 @@
       "es2019"
     ],
     "jsx": "react-jsx",
+    "jsxImportSource": "@emotion/react",
     "noEmit": true
   },
   "include": [
