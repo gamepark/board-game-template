@@ -20,6 +20,10 @@
     "i18next-icu": "^2.0.2",
     "intl-messageformat": "^9.5.2",
     "react": "^17.0.1",
+    "react-dnd": "^13.1.1",
+    "react-dnd-html5-backend": "^12.1.1",
+    "react-dnd-multi-backend": "^6.0.2",
+    "react-dnd-touch-backend": "^12.0.0",
     "react-dom": "^17.0.1",
     "react-i18next": "^11.8.8",
     "react-redux": "^7.2.2",
@@ -53,6 +57,7 @@
   },
   "devDependencies": {
     "@emotion/babel-preset-css-prop": "^11.2.0",
+    "@types/react-dnd-multi-backend": "^6.0.0",
     "@types/react-redux": "^7.1.16",
     "customize-cra": "^1.0.0",
     "imagemin-webp-webpack-plugin": "^3.3.3",

@@ -1,26 +1,22 @@
-import {css} from '@emotion/react'
-import {useTranslation} from 'react-i18next'
-import './App.css'
-import logo from './logo.svg'
+import GameState from '@gamepark/board-game-template/GameState'
+import {useGame} from '@gamepark/react-client'
+import {useEffect, useState} from 'react'
+import {DndProvider} from 'react-dnd-multi-backend'
+import HTML5ToTouch from 'react-dnd-multi-backend/dist/cjs/HTML5toTouch'
+import GameDisplay from './GameDisplay'
+import Header from './Header'
 
 export default function App() {
-  const {t} = useTranslation()
+  const game = useGame<GameState>()
+  const [isJustDisplayed, setJustDisplayed] = useState(true)
+  useEffect(() => {
+    setTimeout(() => setJustDisplayed(false), 2000)
+  }, [])
+  const loading = !game || isJustDisplayed
   return (
-    <div className="App" css={css`position: absolute; width: 100%`}>
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo"/>
-        <p>
-          {t('Game loading…')}
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <DndProvider options={HTML5ToTouch}>
+      {game && <GameDisplay game={game}/>}
+      <Header loading={loading} game={game}/>
+    </DndProvider>
   )
 }
