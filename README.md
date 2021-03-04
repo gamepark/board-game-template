@@ -37,6 +37,13 @@ yarn start
 ```
 It should open a browser window on http://localhost:3000 and display the first version of your game!
 
+The project is divided into 2 parts: the rules (/rules), and the application (/app)
+
+The rules describe how the game works.
+This code will be used both by Game Park server, and the player's browsers.
+
+The app is how the game is displayed, it will only run in the player's browsers.
+
 ## 3. Design the user experience
 
 ### Layout the game material
@@ -69,6 +76,19 @@ When there is a victory points track, it can be replaced by a number to save som
 Do not worry too much about the animations: they can be added later on.
 
 One advice though: it is much easier to animate the elements if they all are a direct child of the letterbox component!
+
+## 4. Display the initial state
+**Your game always has a state, and the React application always displays the game state.**
+
+The state of the game is a Javascript object. The specifications for this object must be written here: `/rules/src/GameState.ts`
+
+If you change the specification, it will probably break the game setup here: `/rules/src/index.ts`.
+In this file, you can rename "MyBoardGame" with the real name of your game, and in the constructor when you have no arguments,
+you must set up a new game with the properties matching your specifications.
+
+**Everytime you change GameState, you must open the browser console and run `game.new()` to replace the old obsolete game state with a fresh new game.**
+
+Once you have a satisfying initial game state, you can go back into `/app/src/GameDisplay.tsx` and write components to display the game state the way you want.
 
 ## 42. Deploy on Game Park
 **First, the rules must be deployed by Game Park (contact us for any new version).**
