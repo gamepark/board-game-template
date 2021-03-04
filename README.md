@@ -39,6 +39,36 @@ It should open a browser window on http://localhost:3000 and display the first v
 
 ## 3. Design the user experience
 
+### Layout the game material
+
+#### The letterbox scale mode
+
+The game must work for computers, tablets and mobile phone.
+
+The easier way is the ["letterbox scale mode"](https://felgo.com/doc/felgo-different-screen-sizes/)
+
+This is already implemented in this file `/app/src/GameDisplay.tsx`: see the "Letterbox" component here.
+
+With this in mind, you can imagine a layout that will display all the game material inside a 16:9 zone,
+that will scale from a mobile display up to a computer screen.
+
+Everything must be big enough to read on a mobile phone, or have some way to "zoom-in" later on!
+
+*Feel free to remove the letterbox approach for something else if you think there is something better to do for your game ☺*
+
+#### Use percentage everywhere
+For the content to scale up and down inside the letterbox, you should only use `%` and `em` units in your CSS code.
+
+### Use numbers sparingly
+An interface full of numbers can frighten a novice player! Try to use number only when you have no other choice,
+or when the player have more than 4 or 5 similar items, for example.
+
+When there is a victory points track, it can be replaced by a number to save some space however!
+
+### Animations
+Do not worry too much about the animations: they can be added later on.
+
+One advice though: it is much easier to animate the elements if they all are a direct child of the letterbox component!
 
 ## 42. Deploy on Game Park
 **First, the rules must be deployed by Game Park (contact us for any new version).**
