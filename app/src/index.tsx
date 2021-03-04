@@ -54,6 +54,7 @@ const style = css`
     background-color: white;
     background-size: cover;
     background-position: center;
+    color: #eee;
 
     &:before {
       content: '';

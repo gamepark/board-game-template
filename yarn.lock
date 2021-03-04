@@ -1332,6 +1332,11 @@
     pusher-js "^7.0.0"
     redux ">=4.0.5"
 
+"@gamepark/react-components@^3.1.0":
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/@gamepark/react-components/-/react-components-3.1.0.tgz#61ec8e4b8e2526bce86f08574dcfb1b26224422a"
+  integrity sha512-9rysbIoydfKMj695fG1gQdzmhhb1bTNiVm/50bke7SSHQ+QBHyJ/xHQjsrhdSQ78z3M4QQzM/QdfDBjPDEacWw==
+
 "@gamepark/rules-api@^3.1.0":
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/@gamepark/rules-api/-/rules-api-3.1.0.tgz#ead851cb8fe28d6db8df3b936b46295bccd02dfa"
