@@ -1,0 +1,16 @@
+{
+  "extends": "./tsconfig.paths.json",
+  "compilerOptions": {
+    "module": "esnext",
+    "target": "es5",
+    "lib": [
+      "dom",
+      "es2019"
+    ],
+    "jsx": "react",
+    "noEmit": true
+  },
+  "include": [
+    "src"
+  ]
+}

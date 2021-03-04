@@ -1,0 +1,9 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@gamepark/board-game-template/*": ["../rules/src/*"]
+    }
+  }
+}
