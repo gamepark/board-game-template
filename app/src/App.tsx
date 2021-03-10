@@ -1,3 +1,4 @@
+/** @jsxImportSource @emotion/react */
 import GameState from '@gamepark/board-game-template/GameState'
 import {useGame} from '@gamepark/react-client'
 import {useEffect, useState} from 'react'

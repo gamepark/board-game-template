@@ -1,3 +1,4 @@
+/** @jsxImportSource @emotion/react */
 import {css, keyframes} from '@emotion/react'
 import GameState from '@gamepark/board-game-template/GameState'
 import {Letterbox} from '@gamepark/react-components'
@@ -9,7 +10,11 @@ type Props = {
 export default function GameDisplay({game}: Props) {
   return (
     <Letterbox css={letterBoxStyle} top={0}>
-      <div css={css`position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 3rem;`}>
+      <div css={css`position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 3rem;`}>
         {JSON.stringify(game)}
       </div>
     </Letterbox>

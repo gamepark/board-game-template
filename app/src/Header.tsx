@@ -1,3 +1,4 @@
+/** @jsxImportSource @emotion/react */
 import {css} from '@emotion/react'
 import GameState from '@gamepark/board-game-template/GameState'
 import {useTranslation} from 'react-i18next'
