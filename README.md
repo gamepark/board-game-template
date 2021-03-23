@@ -82,7 +82,7 @@ One advice though: it is much easier to animate the elements if they all are a d
 
 The state of the game is a Javascript object. The specifications for this object must be written here: `/rules/src/GameState.ts`
 
-If you change the specification, it will probably break the game setup here: `/rules/src/index.ts`.
+If you change the specification, it will probably break the game setup here: `/rules/src/MyBoardGame.ts`.
 In this file, you can rename "MyBoardGame" with the real name of your game, and in the constructor when you have no arguments,
 you must set up a new game with the properties matching your specifications.
 

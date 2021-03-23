@@ -1,7 +1,12 @@
 import PlayerState from './PlayerState'
 
-export default interface GameState {
+/**
+ * In here, you describe what a GameState will look like at any time during a game.
+ */
+type GameState = {
   players: PlayerState[]
   round: number
   deck: number[]
 }
+
+export default GameState

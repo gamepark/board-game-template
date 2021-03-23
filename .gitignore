@@ -27,5 +27,5 @@ yarn-error.log*
 /.idea
 *.iml
 
-# React
-react-app-env.d.ts
+# Visual Studio Code
+.vscode
