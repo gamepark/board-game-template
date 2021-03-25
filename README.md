@@ -6,26 +6,15 @@ First, make sure you have an agreement with us about the game you are going to a
 
 Then, let's code 🙂
 
-## 1. Mirror this repository
+## 1. Git repository
 You must install Git on your computer, and create an account on Github if you do not have one.
 
-Then, execute the following git commands (make sure to replace "your-game-code" with you real game code provided by Game Park):
-```
-git clone --bare https://github.com/gamepark/board-game-template your-game-code
-```
-Go into the folder that was created:
-```
-cd your-game-code
-```
-Finally, push the project on your own Github repository (create it first):
-```
-git push --mirror https://github.com/your-github-username/your-game-code.git
-```
+Then, you need a repository for you game. You can either wait for us to create one, or follow this documentation: https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/duplicating-a-repository
 
 ## 2. Run the project
 Use VSCode, Webstorm or any IDE you like to open the code on you computer.
 
-You must also install Node Package Manager (https://www.npmjs.com/) and Yarn (https://yarnpkg.com/)
+You must also install Node.js (https://nodejs.org/) and Yarn (https://yarnpkg.com/)
 
 Now you can install all the dependencies of the project using Yarn. Run this command in the project's folder:
 ```
