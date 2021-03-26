@@ -154,7 +154,7 @@ export default class MyBoardGame extends SequentialGame<GameState, Move, PlayerC
    */
   getPlayerMoveView(move: Move, playerId: PlayerColor): MoveView {
     console.log(playerId)
-    if (move.type === MoveType.DrawCard) {
+    if (move.type === MoveType.DrawCard && move.playerId === playerId) {
       return {...move, card: this.state.deck[0]}
     }
     return move
