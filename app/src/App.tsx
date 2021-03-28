@@ -1,5 +1,5 @@
 /** @jsxImportSource @emotion/react */
-import GameState from '@gamepark/board-game-template/GameState'
+import GameView from '@gamepark/board-game-template/GameView'
 import {useGame} from '@gamepark/react-client'
 import {useEffect, useState} from 'react'
 import {DndProvider} from 'react-dnd-multi-backend'
@@ -8,7 +8,7 @@ import GameDisplay from './GameDisplay'
 import Header from './Header'
 
 export default function App() {
-  const game = useGame<GameState>()
+  const game = useGame<GameView>()
   const [isJustDisplayed, setJustDisplayed] = useState(true)
   useEffect(() => {
     setTimeout(() => setJustDisplayed(false), 2000)

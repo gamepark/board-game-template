@@ -1,10 +1,10 @@
 /** @jsxImportSource @emotion/react */
 import {css, keyframes} from '@emotion/react'
-import GameState from '@gamepark/board-game-template/GameState'
+import GameView from '@gamepark/board-game-template/GameView'
 import {Letterbox} from '@gamepark/react-components'
 
 type Props = {
-  game: GameState
+  game: GameView
 }
 
 export default function GameDisplay({game}: Props) {
