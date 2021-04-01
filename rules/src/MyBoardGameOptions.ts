@@ -1,7 +1,7 @@
 import {GameOptions, OptionsDescription, OptionType} from '@gamepark/rules-api'
 import {TFunction} from 'i18next'
 import GameState from './GameState'
-import PlayerColor from './PlayerColor'
+import PlayerColor, {playerColors} from './PlayerColor'
 
 /**
  * This is the options for each players in the game.
@@ -32,19 +32,21 @@ export const MyBoardGameOptionsDescription: OptionsDescription<{}, MyBoardGamePl
     id: {
       type: OptionType.LIST,
       getLabel: (t: TFunction) => t('Empire'),
-      values: Object.values(PlayerColor),
-      getValueLabel: (empire: PlayerColor, t: TFunction) => {
-        switch (empire) {
-          case PlayerColor.Red:
-            return t('Red player')
-          case PlayerColor.Blue:
-            return t('Blue player')
-          case PlayerColor.Green:
-            return t('Green player')
-          case PlayerColor.Yellow:
-            return t('Yellow player')
-        }
-      }
+      values: playerColors,
+      getValueLabel: getPlayerName
     }
+  }
+}
+
+export function getPlayerName(playerId: PlayerColor, t: TFunction) {
+  switch (playerId) {
+    case PlayerColor.Red:
+      return t('Red player')
+    case PlayerColor.Blue:
+      return t('Blue player')
+    case PlayerColor.Green:
+      return t('Green player')
+    case PlayerColor.Yellow:
+      return t('Yellow player')
   }
 }
