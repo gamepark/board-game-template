@@ -1,6 +1,6 @@
 /** @jsxImportSource @emotion/react */
 import GameView from '@gamepark/board-game-template/GameView'
-import {useGame} from '@gamepark/react-client'
+import {Menu, useGame} from '@gamepark/react-client'
 import {useEffect, useState} from 'react'
 import {DndProvider} from 'react-dnd-multi-backend'
 import HTML5ToTouch from 'react-dnd-multi-backend/dist/cjs/HTML5toTouch'
@@ -18,6 +18,7 @@ export default function App() {
     <DndProvider options={HTML5ToTouch}>
       {game && <GameDisplay game={game}/>}
       <Header loading={loading} game={game}/>
+      <Menu/>
     </DndProvider>
   )
 }

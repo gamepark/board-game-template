@@ -1295,7 +1295,14 @@
   dependencies:
     "@fortawesome/fontawesome-common-types" "^0.2.35"
 
-"@fortawesome/free-solid-svg-icons@^5.15.2":
+"@fortawesome/free-regular-svg-icons@^5.15.3":
+  version "5.15.3"
+  resolved "https://registry.yarnpkg.com/@fortawesome/free-regular-svg-icons/-/free-regular-svg-icons-5.15.3.tgz#1ec4f2410ff638db549c5c5484fc60b66407dbe6"
+  integrity sha512-q4/p8Xehy9qiVTdDWHL4Z+o5PCLRChePGZRTXkl+/Z7erDVL8VcZUuqzJjs6gUz6czss4VIPBRdCz6wP37/zMQ==
+  dependencies:
+    "@fortawesome/fontawesome-common-types" "^0.2.35"
+
+"@fortawesome/free-solid-svg-icons@^5.15.2", "@fortawesome/free-solid-svg-icons@^5.15.3":
   version "5.15.3"
   resolved "https://registry.yarnpkg.com/@fortawesome/free-solid-svg-icons/-/free-solid-svg-icons-5.15.3.tgz#52eebe354f60dc77e0bde934ffc5c75ffd04f9d8"
   integrity sha512-XPeeu1IlGYqz4VWGRAT5ukNMd4VHUEEJ7ysZ7pSSgaEtNvSo+FLurybGJVmiqkQdK50OkSja2bfZXOeyMGRD8Q==
@@ -1309,40 +1316,46 @@
   dependencies:
     prop-types "^15.7.2"
 
-"@gamepark/react-client@~4.2.1":
-  version "4.2.1"
-  resolved "https://registry.yarnpkg.com/@gamepark/react-client/-/react-client-4.2.1.tgz#008dd3878ba2398581abfb158255ee548b25c372"
-  integrity sha512-KEm3RiiN1zdwr235mXL0OLTikTki3Fbuw1pgeasKH/i0D9/I2W9a8fWKrCnhTazb1hpVusjZA0Dlq1vYvRnSCQ==
+"@gamepark/react-client@~4.7.0":
+  version "4.7.0"
+  resolved "https://registry.yarnpkg.com/@gamepark/react-client/-/react-client-4.7.0.tgz#154ee0d3fb217e1547ffe56e8d5f86f61e98ed00"
+  integrity sha512-Ru2BFljRmD64tSRH0PAkIkV1lNP1KQ9PO94eR7A1K2fKrR62jdrZAp54pATJuzBUUWjrQMcIUK5fOGHHt7p16A==
   dependencies:
     "@apollo/client" "^3.1.3"
     "@datadog/browser-logs" "^1.11.4"
-    "@gamepark/rules-api" "^4.2.1"
+    "@fortawesome/free-regular-svg-icons" "^5.15.3"
+    "@fortawesome/free-solid-svg-icons" "^5.15.3"
+    "@fortawesome/react-fontawesome" "^0.1.14"
+    "@gamepark/rules-api" "^4.7.0"
     "@types/lodash.shuffle" "^4.2.6"
     "@types/react" "^17.0.3"
     assert "^2.0.0"
+    fscreen "^1.2.0"
     graphql "^15.3.0"
     i18next-icu "^2.0.2"
     immer "^7.0.9"
     intl-messageformat "^9.5.2"
     lodash.shuffle "^4.2.0"
     moment "^2.29.1"
+    nosleep.js "^0.12.0"
+    o9n "^2.1.0"
     pusher-js "^7.0.0"
     redux ">=4.0.5"
 
-"@gamepark/react-components@~4.3.1":
-  version "4.3.1"
-  resolved "https://registry.yarnpkg.com/@gamepark/react-components/-/react-components-4.3.1.tgz#3773ee5ba40f15aa484a431b1c7fb2c264d812ee"
-  integrity sha512-ludJyXjl3VUFy3EI6U6bWZ94AtNfzLkopTK55kMY8UC9lI5dPUyoJJUkofnijR2AaXJxuz9r+q5a9Uvf9V5mYw==
+"@gamepark/react-components@~4.7.0":
+  version "4.7.0"
+  resolved "https://registry.yarnpkg.com/@gamepark/react-components/-/react-components-4.7.0.tgz#72b54cebf26520bc54dfd12019d9cf95fa1750b5"
+  integrity sha512-To/awR0JiLT/8tIzEyjoS0+kYxsOrui7phd4FS83DsbktJzaz2Wp/3kJqQdz/tx6QKY/xJrddhwgxOERYRiL6A==
   dependencies:
     "@fortawesome/fontawesome-svg-core" "^1.2.34"
     "@fortawesome/free-solid-svg-icons" "^5.15.2"
     "@fortawesome/react-fontawesome" "^0.1.14"
     "@react-dnd/shallowequal" "^2.0.0"
 
-"@gamepark/rules-api@^4.2.1", "@gamepark/rules-api@~4.2.1":
-  version "4.2.1"
-  resolved "https://registry.yarnpkg.com/@gamepark/rules-api/-/rules-api-4.2.1.tgz#eded03e4988aee9408779d9781ea5aa4294e2f18"
-  integrity sha512-6/hYTffwkIlbwlyLbuVnuY79H+wfriC0B0p3iNEUlS/3MtVFGCyq1UJjJ8R85RoLVANBYI3fYLN1y3en3lS2yw==
+"@gamepark/rules-api@^4.7.0", "@gamepark/rules-api@~4.7.0":
+  version "4.7.0"
+  resolved "https://registry.yarnpkg.com/@gamepark/rules-api/-/rules-api-4.7.0.tgz#9dcc4735f130dc8e12efd9f5df4b1072b2edb1d5"
+  integrity sha512-9a1pegSYPKvqVHTNxbtZy4e740wnwwnKrKe2B119iMIvXEleA4/s+A7Qh3542UxvTUVRr9y6+xOOXOlpD5h2sg==
   dependencies:
     fast-deep-equal "^3.1.3"
 
@@ -7175,6 +7188,11 @@ fs.realpath@^1.0.0:
   resolved "https://registry.yarnpkg.com/fs.realpath/-/fs.realpath-1.0.0.tgz#1504ad2523158caa40db4a2787cb01411994ea4f"
   integrity sha1-FQStJSMVjKpA20onh8sBQRmU6k8=
 
+fscreen@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/fscreen/-/fscreen-1.2.0.tgz#1a8c88e06bc16a07b473ad96196fb06d6657f59e"
+  integrity sha512-hlq4+BU0hlPmwsFjwGGzZ+OZ9N/wq9Ljg/sq3pX+2CD7hrJsX9tJgWWK/wiNTFM212CLHWhicOoqwXyZGGetJg==
+
 fsevents@^1.2.7:
   version "1.2.13"
   resolved "https://registry.yarnpkg.com/fsevents/-/fsevents-1.2.13.tgz#f325cb0455592428bcf11b383370ef70e3bfcc38"
@@ -10434,6 +10452,11 @@ normalize-url@^3.0.0, normalize-url@^3.3.0:
   resolved "https://registry.yarnpkg.com/normalize-url/-/normalize-url-3.3.0.tgz#b2e1c4dc4f7c6d57743df733a4f5978d18650559"
   integrity sha512-U+JJi7duF1o+u2pynbp2zXDW2/PADgC30f0GsHZtRh+HOcXHnw137TrNlyxxRvWW5fjKd3bcLHPxofWuCjaeZg==
 
+nosleep.js@^0.12.0:
+  version "0.12.0"
+  resolved "https://registry.yarnpkg.com/nosleep.js/-/nosleep.js-0.12.0.tgz#a01fddab2c13af357d673928b1f40a9013a4dc08"
+  integrity sha512-9d1HbpKLh3sdWlhXMhU6MMH+wQzKkrgfRkYV0EBdvt99YJfj0ilCJrWRDYG2130Tm4GXbEoTCx5b34JSaP+HhA==
+
 npm-bundled@^1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/npm-bundled/-/npm-bundled-1.1.1.tgz#1edd570865a94cdb1bc8220775e29466c9fb234b"
@@ -10562,6 +10585,11 @@ nwsapi@^2.2.0:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/nwsapi/-/nwsapi-2.2.0.tgz#204879a9e3d068ff2a55139c2c772780681a38b7"
   integrity sha512-h2AatdwYH+JHiZpv7pt/gSX1XoRGb7L/qSIeuqA6GwYoF9w1vP1cw42TO0aI2pNyshRK5893hNSl+1//vHK7hQ==
+
+o9n@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/o9n/-/o9n-2.1.0.tgz#e4566cf95e5abefdd10dd2c2bc304f2d8ebf243c"
+  integrity sha512-Kvf4kB/XBctZwXKwjAmlPVhCqRywMFXl+o0dvhIc04A5gjWdTiQWYgy75vGXPRBxa9TrkWK6rhgtE+o4GnZTYQ==
 
 oauth-sign@~0.9.0:
   version "0.9.0"
