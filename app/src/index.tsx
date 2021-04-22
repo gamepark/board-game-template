@@ -1,12 +1,12 @@
 import {css, Global} from '@emotion/react'
 import MyBoardGame from '@gamepark/board-game-template/MyBoardGame'
 import {MyBoardGameOptionsDescription} from '@gamepark/board-game-template/MyBoardGameOptions'
-import MyBoardGameView from '@gamepark/board-game-template/MyBoardGameView'
 import {GameProvider, setupTranslation} from '@gamepark/react-client'
 import normalize from 'emotion-normalize'
 import {StrictMode} from 'react'
 import ReactDOM from 'react-dom'
 import App from './App'
+import MyBoardGameView from './MyBoardGameView'
 import translations from './translations.json'
 
 setupTranslation(translations)

@@ -1,9 +1,9 @@
+import GameView from '@gamepark/board-game-template/GameView'
+import {drawCardInPlayerView, drawCardInView, isDrawCardView} from '@gamepark/board-game-template/moves/DrawCard'
+import MoveType from '@gamepark/board-game-template/moves/MoveType'
+import MoveView from '@gamepark/board-game-template/moves/MoveView'
+import {spendGold} from '@gamepark/board-game-template/moves/SpendGold'
 import {Game} from '@gamepark/rules-api'
-import GameView from './GameView'
-import {drawCardInPlayerView, drawCardInView, isDrawCardView} from './moves/DrawCard'
-import MoveType from './moves/MoveType'
-import MoveView from './moves/MoveView'
-import {spendGold} from './moves/SpendGold'
 
 /**
  * This class is useful when the game has "IncompleteInformation" (or "SecretInformation").

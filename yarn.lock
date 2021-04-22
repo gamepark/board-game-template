@@ -1316,17 +1316,17 @@
   dependencies:
     prop-types "^15.7.2"
 
-"@gamepark/react-client@~4.7.0":
-  version "4.7.0"
-  resolved "https://registry.yarnpkg.com/@gamepark/react-client/-/react-client-4.7.0.tgz#154ee0d3fb217e1547ffe56e8d5f86f61e98ed00"
-  integrity sha512-Ru2BFljRmD64tSRH0PAkIkV1lNP1KQ9PO94eR7A1K2fKrR62jdrZAp54pATJuzBUUWjrQMcIUK5fOGHHt7p16A==
+"@gamepark/react-client@~4.14.4":
+  version "4.14.4"
+  resolved "https://registry.yarnpkg.com/@gamepark/react-client/-/react-client-4.14.4.tgz#4cdc4d3959dfc98a9a7bca8f02a2046f454fbe13"
+  integrity sha512-+h5+w+GWKMdovnxb2qV85aHSdfq82IBwIZ8mk/jQnVSeCPAQGay2IF8YRdfFXKHOVFbUQ25Bi7o4ctejGae91Q==
   dependencies:
     "@apollo/client" "^3.1.3"
     "@datadog/browser-logs" "^1.11.4"
     "@fortawesome/free-regular-svg-icons" "^5.15.3"
     "@fortawesome/free-solid-svg-icons" "^5.15.3"
     "@fortawesome/react-fontawesome" "^0.1.14"
-    "@gamepark/rules-api" "^4.7.0"
+    "@gamepark/rules-api" "^4.8.0"
     "@types/lodash.shuffle" "^4.2.6"
     "@types/react" "^17.0.3"
     assert "^2.0.0"
@@ -1342,20 +1342,20 @@
     pusher-js "^7.0.0"
     redux ">=4.0.5"
 
-"@gamepark/react-components@~4.7.0":
-  version "4.7.0"
-  resolved "https://registry.yarnpkg.com/@gamepark/react-components/-/react-components-4.7.0.tgz#72b54cebf26520bc54dfd12019d9cf95fa1750b5"
-  integrity sha512-To/awR0JiLT/8tIzEyjoS0+kYxsOrui7phd4FS83DsbktJzaz2Wp/3kJqQdz/tx6QKY/xJrddhwgxOERYRiL6A==
+"@gamepark/react-components@~4.14.1":
+  version "4.14.1"
+  resolved "https://registry.yarnpkg.com/@gamepark/react-components/-/react-components-4.14.1.tgz#253a202dc6607a3f43a7e828315aa0d6e77d4bea"
+  integrity sha512-vtLqoPKg8R9+IP7RFfpRTxp1xjXx996Xli/8dzERyptPRZxkAEHZ0QPKZkgt3X1/4NYGQgBqlz15TRZxvS7myw==
   dependencies:
     "@fortawesome/fontawesome-svg-core" "^1.2.34"
     "@fortawesome/free-solid-svg-icons" "^5.15.2"
     "@fortawesome/react-fontawesome" "^0.1.14"
     "@react-dnd/shallowequal" "^2.0.0"
 
-"@gamepark/rules-api@^4.7.0", "@gamepark/rules-api@~4.7.0":
-  version "4.7.0"
-  resolved "https://registry.yarnpkg.com/@gamepark/rules-api/-/rules-api-4.7.0.tgz#9dcc4735f130dc8e12efd9f5df4b1072b2edb1d5"
-  integrity sha512-9a1pegSYPKvqVHTNxbtZy4e740wnwwnKrKe2B119iMIvXEleA4/s+A7Qh3542UxvTUVRr9y6+xOOXOlpD5h2sg==
+"@gamepark/rules-api@^4.8.0", "@gamepark/rules-api@~4.8.0":
+  version "4.8.0"
+  resolved "https://registry.yarnpkg.com/@gamepark/rules-api/-/rules-api-4.8.0.tgz#8b9b42435da2f146ed78ba5e4eac296b2dc59abe"
+  integrity sha512-ly61WeHflx1nKOYV4aWaoQvPlXBxFgcJiYH2HxgWB5AQSdl3Db0KVoIIlTR9wAF9kvQSRjU16ShEuQhDb2NwUw==
   dependencies:
     fast-deep-equal "^3.1.3"
 
