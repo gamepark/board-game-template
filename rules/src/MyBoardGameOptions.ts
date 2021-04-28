@@ -31,7 +31,7 @@ export const MyBoardGameOptionsDescription: OptionsDescription<{}, MyBoardGamePl
   players: {
     id: {
       type: OptionType.LIST,
-      getLabel: (t: TFunction) => t('Empire'),
+      getLabel: (t: TFunction) => t('Color'),
       values: playerColors,
       getValueLabel: getPlayerName
     }
