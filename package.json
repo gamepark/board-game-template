@@ -1,6 +1,9 @@
 {
   "private": true,
-  "workspaces": ["rules", "app"],
+  "workspaces": [
+    "rules",
+    "app"
+  ],
   "author": "Romain Fromi <romain@game-park.com> (https://game-park.com/)",
   "license": "ISC",
   "devDependencies": {
