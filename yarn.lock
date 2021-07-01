@@ -1395,19 +1395,27 @@
   dependencies:
     prop-types "^15.7.2"
 
-"@gamepark/react-client@~4.14.14":
-  version "4.14.14"
-  resolved "https://registry.yarnpkg.com/@gamepark/react-client/-/react-client-4.14.14.tgz#ac73904347c21d46b00d5176aabfe0fc6bff9957"
-  integrity sha512-NI3H7adjjD8K4CGCjTVh4HkrBge71PnuEvEC2SDwBlv1LxoOKrMCNJqwW+6iMV0Bc79IsO3WpN14/KkSsB/HzQ==
+"@gamepark/avataaars@^2.1.3":
+  version "2.1.3"
+  resolved "https://registry.yarnpkg.com/@gamepark/avataaars/-/avataaars-2.1.3.tgz#bf5540ce7ade3da03c81cbbf1651b5042ad4b08c"
+  integrity sha512-ZPa78YaO95lwozQB/67QM9axbQtBeS3pMl9fd6R5hBDLsmDdQiuemGzL2Ie8X3FYBHvXlesaPFcII5sltdWkJw==
+
+"@gamepark/react-client@~4.17.0":
+  version "4.17.0"
+  resolved "https://registry.yarnpkg.com/@gamepark/react-client/-/react-client-4.17.0.tgz#1e8bc66e3874324632056c5e118ff4efc2046a76"
+  integrity sha512-9Ppa9DTgh/Duw/wodWu3gxQsovkU8XCUoUDpmsfjxEzq4P5R312IDXPIdexky8vdK0qLyAL288QlqmTrYuYncg==
   dependencies:
     "@apollo/client" "^3.1.3"
     "@datadog/browser-logs" "^2.8.1"
     "@fortawesome/free-regular-svg-icons" "^5.15.3"
     "@fortawesome/free-solid-svg-icons" "^5.15.3"
     "@fortawesome/react-fontawesome" "^0.1.14"
-    "@gamepark/rules-api" "^4.14.11"
+    "@gamepark/avataaars" "^2.1.3"
+    "@gamepark/rules-api" "^4.17.0"
+    "@harelpls/use-pusher" "^7.2.1"
     "@types/lodash.shuffle" "^4.2.6"
     "@types/react" "^17.0.3"
+    "@types/react-infinite-scroller" "^1.2.1"
     assert "^2.0.0"
     fscreen "^1.2.0"
     graphql "^15.3.0"
@@ -1419,22 +1427,23 @@
     nosleep.js "^0.12.0"
     o9n "^2.1.0"
     pusher-js "^7.0.0"
+    react-infinite-scroller "^1.2.4"
     redux ">=4.0.5"
 
-"@gamepark/react-components@~4.14.10":
-  version "4.14.10"
-  resolved "https://registry.yarnpkg.com/@gamepark/react-components/-/react-components-4.14.10.tgz#92347bc3348ff64c1749ed4f61b87bbe4a5e5cb4"
-  integrity sha512-qzkHMW25C3C6cu4xrGvFu/NXf4y77wPT6CKHvNjXqgng5qPz4nIKyvociDNN3P0kkUFeYbxM1H9uigMIP9XH9Q==
+"@gamepark/react-components@~4.15.0":
+  version "4.15.0"
+  resolved "https://registry.yarnpkg.com/@gamepark/react-components/-/react-components-4.15.0.tgz#9d37d15218609322d83637b8bc53a2476ea8bb04"
+  integrity sha512-iEgL1oudJ8rYn2/ej2V8b88zy2wibOYbHVZKF9vy9mEfmpZdq8USGJd5SxftsdH2W5a76o/EHXHcOzaANm1PEg==
   dependencies:
     "@fortawesome/fontawesome-svg-core" "^1.2.34"
     "@fortawesome/free-solid-svg-icons" "^5.15.2"
     "@fortawesome/react-fontawesome" "^0.1.14"
     "@react-dnd/shallowequal" "^2.0.0"
 
-"@gamepark/rules-api@^4.14.11", "@gamepark/rules-api@~4.14.11":
-  version "4.14.11"
-  resolved "https://registry.yarnpkg.com/@gamepark/rules-api/-/rules-api-4.14.11.tgz#deb6cad1696ed5af3826542c6af491e0c93f8320"
-  integrity sha512-4PkaYzJOmfO9Ja+lj7gwNomr2+LqRdbPr1EqC4qAPFz9uIrUUPjClRl1UL8HdoE4kLRpwwunPwYDCwwQa825eQ==
+"@gamepark/rules-api@^4.17.0", "@gamepark/rules-api@~4.17.0":
+  version "4.17.0"
+  resolved "https://registry.yarnpkg.com/@gamepark/rules-api/-/rules-api-4.17.0.tgz#70ba45a7cba44f638806db9673b4ced002d29451"
+  integrity sha512-BSerehIS9CYPj12dwHnZsFjERwzKrE8Hd7xmdq/KC/lXvHMwejGA92UagmQrRvTylT5srjxnZnU/OAtiWpI3gQ==
   dependencies:
     fast-deep-equal "^3.1.3"
 
@@ -1474,6 +1483,15 @@
   integrity sha512-tAag0jEcjwH+P2quUfipd7liWCNX2F8NvYjQp2wtInsZxnMlypdw0FtAOLxtvvkO+GSRRbmNi8m/5y42PQJYCQ==
   dependencies:
     "@hapi/hoek" "^8.3.0"
+
+"@harelpls/use-pusher@^7.2.1":
+  version "7.2.1"
+  resolved "https://registry.yarnpkg.com/@harelpls/use-pusher/-/use-pusher-7.2.1.tgz#f1f133c09f971b89dc692dc2a11a4198ee003dce"
+  integrity sha512-e94JTkNsaVKDnB6j6j4P3RRAGSNtMN6V+f3Or+gwe3TsdLUlpeGrw7JchIsSLmsxYvnJwS4YRees4fbuHLeQFQ==
+  dependencies:
+    dequal "^2.0.1"
+    invariant "^2.2.4"
+    pusher-js "^7.0.0"
 
 "@istanbuljs/load-nyc-config@^1.0.0":
   version "1.1.0"
@@ -2942,6 +2960,13 @@
   version "17.0.5"
   resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-17.0.5.tgz#df44eed5b8d9e0b13bb0cd38e0ea6572a1231227"
   integrity sha512-ikqukEhH4H9gr4iJCmQVNzTB307kROe3XFfHAOTxOXPOw7lAoEXnM5KWTkzeANGL5Ce6ABfiMl/zJBYNi7ObmQ==
+  dependencies:
+    "@types/react" "*"
+
+"@types/react-infinite-scroller@^1.2.1":
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/@types/react-infinite-scroller/-/react-infinite-scroller-1.2.1.tgz#1cd747ef8f50d3c883e375c0491a906e5436fcb2"
+  integrity sha512-64bpbqdSgtmy1zSZ2AQoFzguwZO7TyKjqJRTEnfNMCAQbnrX90kz+rYufZyY9CmzhwpXMwRO8xR9fMQnbYUkgQ==
   dependencies:
     "@types/react" "*"
 
@@ -5811,6 +5836,11 @@ deprecation@^2.0.0, deprecation@^2.3.1:
   resolved "https://registry.yarnpkg.com/deprecation/-/deprecation-2.3.1.tgz#6368cbdb40abf3373b525ac87e4a260c3a700919"
   integrity sha512-xmHIy4F3scKVwMsQ4WnVaS8bHOx0DmVwRywosKhaILI0ywMDWPtBSku2HNxRvF7jtwDRsoEwYQSfbxj8b7RlJQ==
 
+dequal@^2.0.1:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/dequal/-/dequal-2.0.2.tgz#85ca22025e3a87e65ef75a7a437b35284a7e319d"
+  integrity sha512-q9K8BlJVxK7hQYqa6XISGmBZbtQQWVXSrRrWreHC94rMt1QL/Impruc+7p2CYSYuVIUr+YCt6hjrs1kkdJRTug==
+
 des.js@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/des.js/-/des.js-1.0.1.tgz#5382142e1bdc53f85d86d53e5f4aa7deb91e0843"
@@ -8266,6 +8296,13 @@ into-stream@^3.1.0:
     from2 "^2.1.1"
     p-is-promise "^1.1.0"
 
+invariant@^2.2.4:
+  version "2.2.4"
+  resolved "https://registry.yarnpkg.com/invariant/-/invariant-2.2.4.tgz#610f3c92c9359ce1db616e538008d23ff35158e6"
+  integrity sha512-phJfQVBuaJM5raOpJjSfkiD6BpbCE4Ns//LaXl6wGYtUBY83nWS6Rf9tXm2e8VaK60JEjYldbPif/A2B1C2gNA==
+  dependencies:
+    loose-envify "^1.0.0"
+
 ip-regex@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/ip-regex/-/ip-regex-2.1.0.tgz#fa78bf5d2e6913c911ce9f819ee5146bb6d844e9"
@@ -9689,7 +9726,7 @@ longest@^1.0.0:
   resolved "https://registry.yarnpkg.com/longest/-/longest-1.0.1.tgz#30a0b2da38f73770e8294a0d22e6625ed77d0097"
   integrity sha1-MKCy2jj3N3DoKUoNIuZiXtd9AJc=
 
-loose-envify@^1.1.0, loose-envify@^1.4.0:
+loose-envify@^1.0.0, loose-envify@^1.1.0, loose-envify@^1.4.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/loose-envify/-/loose-envify-1.4.0.tgz#71ee51fa7be4caec1a63839f7e682d8132d30caf"
   integrity sha512-lyuxPGr/Wfhrlem2CL/UcnUc1zcqKAImBDzukY7Y5F/yQiNdko6+fRLevlw1HgMySw7f611UIY408EtxRSoK3Q==
@@ -12144,7 +12181,7 @@ promzard@^0.3.0:
   dependencies:
     read "1"
 
-prop-types@^15.7.2:
+prop-types@^15.5.8, prop-types@^15.7.2:
   version "15.7.2"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.7.2.tgz#52c41e75b8c87e72b9d9360e0206b99dcbffa6c5"
   integrity sha512-8QQikdH7//R2vurIJSutZ1smHYTcLpRWEOlHnzcWHmBYrOGUysKwSsrC89BCiFj3CbrfJ/nXFdJepOVrY1GCHQ==
@@ -12496,6 +12533,13 @@ react-i18next@^11.8.8:
   dependencies:
     "@babel/runtime" "^7.13.6"
     html-parse-stringify "^3.0.1"
+
+react-infinite-scroller@^1.2.4:
+  version "1.2.4"
+  resolved "https://registry.yarnpkg.com/react-infinite-scroller/-/react-infinite-scroller-1.2.4.tgz#f67eaec4940a4ce6417bebdd6e3433bfc38826e9"
+  integrity sha512-/oOa0QhZjXPqaD6sictN2edFMsd3kkMiE19Vcz5JDgHpzEJVqYcmq+V3mkwO88087kvKGe1URNksHEOt839Ubw==
+  dependencies:
+    prop-types "^15.5.8"
 
 react-is@^16.13.1, react-is@^16.7.0, react-is@^16.8.1:
   version "16.13.1"

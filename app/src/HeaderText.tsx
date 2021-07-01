@@ -1,5 +1,6 @@
 /** @jsxImportSource @emotion/react */
 import GameView from '@gamepark/board-game-template/GameView'
+import {usePlayerId} from '@gamepark/react-client'
 import {useTranslation} from 'react-i18next'
 
 type Props = {
@@ -7,8 +8,9 @@ type Props = {
   game?: GameView
 }
 
-export default function HeaderText({loading, game}: Props) {
+export default function HeaderText({loading}: Props) {
   const {t} = useTranslation()
+  const playerId = usePlayerId()
   if (loading) return <>{t('Game loading...')}</>
-  return <>Loaded! Now what? Your player id is {game?.players[0].color}</>
+  return <>Loaded! Now what? Your player id is {playerId}</>
 }

@@ -1,4 +1,4 @@
-import {GameOptions, OptionsDescription, OptionType} from '@gamepark/rules-api'
+import {OptionsSpec} from '@gamepark/rules-api'
 import {TFunction} from 'i18next'
 import GameState from './GameState'
 import PlayerColor, {playerColors} from './PlayerColor'
@@ -12,7 +12,9 @@ type MyBoardGamePlayerOptions = { id: PlayerColor }
  * This is the type of object that the game receives when a new game is started.
  * The first generic parameter, "{}", can be changed to include game options like variants or expansions.
  */
-export type MyBoardGameOptions = GameOptions<{}, MyBoardGamePlayerOptions>
+export type MyBoardGameOptions = {
+  players: MyBoardGamePlayerOptions[]
+}
 
 /**
  * Typeguard to help Typescript distinguish between a GameState and new game's options, for you main class constructor.
@@ -27,13 +29,12 @@ export function isGameOptions(arg: GameState | MyBoardGameOptions): arg is MyBoa
  * This object describes all the options a game can have, and will be used by GamePark website to create automatically forms for you game
  * (forms for friendly games, or forms for matchmaking preferences, for instance).
  */
-export const MyBoardGameOptionsDescription: OptionsDescription<{}, MyBoardGamePlayerOptions> = {
+export const MyBoardGameOptionsSpec: OptionsSpec<MyBoardGameOptions> = {
   players: {
     id: {
-      type: OptionType.LIST,
-      getLabel: (t: TFunction) => t('Color'),
+      label: (t: TFunction) => t('Color'),
       values: playerColors,
-      getValueLabel: getPlayerName
+      valueLabel: getPlayerName
     }
   }
 }

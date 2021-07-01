@@ -1,6 +1,6 @@
 import {css, Global} from '@emotion/react'
+import {MyBoardGameOptionsSpec} from '@gamepark/board-game-template'
 import MyBoardGame from '@gamepark/board-game-template/MyBoardGame'
-import {MyBoardGameOptionsDescription} from '@gamepark/board-game-template/MyBoardGameOptions'
 import {GameProvider, setupTranslation} from '@gamepark/react-client'
 import normalize from 'emotion-normalize'
 import {StrictMode} from 'react'
@@ -59,7 +59,7 @@ const style = css`
 
 ReactDOM.render(
   <StrictMode>
-    <GameProvider game="my-board-game" Rules={MyBoardGame} RulesView={MyBoardGameView} optionsDescription={MyBoardGameOptionsDescription}>
+    <GameProvider game="my-board-game" Rules={MyBoardGame} RulesView={MyBoardGameView} optionsSpec={MyBoardGameOptionsSpec}>
       <App/>
     </GameProvider>
     <Global styles={[normalize, style]}/>
