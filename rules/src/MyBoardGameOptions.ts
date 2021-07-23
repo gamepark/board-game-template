@@ -34,7 +34,7 @@ export const MyBoardGameOptionsSpec: OptionsSpec<MyBoardGameOptions> = {
     id: {
       label: (t: TFunction) => t('Color'),
       values: playerColors,
-      valueLabel: getPlayerName
+      valueSpec: color => ({label: t => getPlayerName(color, t)})
     }
   }
 }

@@ -17,7 +17,7 @@
     "prepublishOnly": "tsc"
   },
   "dependencies": {
-    "@gamepark/rules-api": "~4.17.0"
+    "@gamepark/rules-api": "~5.1.0"
   },
   "devDependencies": {
     "i18next": "^20.0.0"
