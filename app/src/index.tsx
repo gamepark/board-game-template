@@ -1,5 +1,5 @@
 import {css, Global} from '@emotion/react'
-import {MyBoardGameOptionsSpec} from '@gamepark/board-game-template'
+import {MyBoardGameOptionsSpec} from '@gamepark/board-game-template/MyBoardGameOptions'
 import MyBoardGame from '@gamepark/board-game-template/MyBoardGame'
 import {GameProvider, setupTranslation} from '@gamepark/react-client'
 import normalize from 'emotion-normalize'
