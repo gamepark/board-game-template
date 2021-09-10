@@ -1451,10 +1451,10 @@
   resolved "https://registry.yarnpkg.com/@gamepark/avataaars/-/avataaars-2.1.3.tgz#bf5540ce7ade3da03c81cbbf1651b5042ad4b08c"
   integrity sha512-ZPa78YaO95lwozQB/67QM9axbQtBeS3pMl9fd6R5hBDLsmDdQiuemGzL2Ie8X3FYBHvXlesaPFcII5sltdWkJw==
 
-"@gamepark/react-client@~5.3.0":
-  version "5.3.0"
-  resolved "https://registry.yarnpkg.com/@gamepark/react-client/-/react-client-5.3.0.tgz#99ac0c5adcfa6e0c2dff76c179931092385b0ef9"
-  integrity sha512-szvMYkIrQ7mUg2LK/5AcuB/LYsotG5PKTXCdCvy1IKepdtcXGkOPM8HO55D3B1PLQn229uXMr/ZC3GrSxcCKDw==
+"@gamepark/react-client@~5.5.0":
+  version "5.5.0"
+  resolved "https://registry.yarnpkg.com/@gamepark/react-client/-/react-client-5.5.0.tgz#762a179c2468ddebc6d20d87528df3cea3994c3c"
+  integrity sha512-7ED+vaelueq7V2QywWwCS4XzG6A6ER5i/pOR84Xa2+Y9MH9qtCI1Pd8IRzJPjFD5Qt5mRHk9+7ad6SL6jIfzPg==
   dependencies:
     "@apollo/client" "^3.1.3"
     "@datadog/browser-logs" "^2.8.1"
@@ -1481,15 +1481,16 @@
     react-infinite-scroller "^1.2.4"
     redux ">=4.0.5"
 
-"@gamepark/react-components@~5.4.0":
-  version "5.4.0"
-  resolved "https://registry.yarnpkg.com/@gamepark/react-components/-/react-components-5.4.0.tgz#e9d6b8dd90feeb3c5fef6a5ebe26e6948d7abf0e"
-  integrity sha512-QHxbovVRecTt20Fz7LDQz+6VQjXZN3HfuBRg4gvpN7AWRBwAFYIwF4w1tO27ckpYl/v1B4bBoVEhlk+vKxIZ8g==
+"@gamepark/react-components@~5.5.0":
+  version "5.5.0"
+  resolved "https://registry.yarnpkg.com/@gamepark/react-components/-/react-components-5.5.0.tgz#7aaf7deb6aade845a4998835ac56774bdec98a3e"
+  integrity sha512-Q79u1nTQnvnLTLka5SKIVdswDyxNb/FY+lOhBRUb1AXkV5O+V/db20odEtvfEVJBJc57QTgiAiR6DJeZR31GSA==
   dependencies:
     "@fortawesome/fontawesome-svg-core" "^1.2.34"
     "@fortawesome/free-solid-svg-icons" "^5.15.2"
     "@fortawesome/react-fontawesome" "^0.1.14"
     "@react-dnd/shallowequal" "^2.0.0"
+    supports-webp "^2.0.1"
 
 "@gamepark/rules-api@^5.3.0", "@gamepark/rules-api@~5.3.0":
   version "5.3.0"
@@ -14346,6 +14347,11 @@ supports-hyperlinks@^2.0.0:
   dependencies:
     has-flag "^4.0.0"
     supports-color "^7.0.0"
+
+supports-webp@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/supports-webp/-/supports-webp-2.0.1.tgz#c0b22d9cfe6ea9b9ac7f56363a0aaf9ed9d9e18e"
+  integrity sha512-dSnAw44W4hqeIBb6GwbETzEZoYOjNNmcROUsZWqMjdJd1mpSKxiVMKh59Py/DI2fH/RlojjS1wCYjFBT68Q9zA==
 
 svg-parser@^2.0.2:
   version "2.0.4"
