@@ -39,6 +39,7 @@ const style = css`
     width: 100vw;
     user-select: none;
     overflow: hidden;
+    background-image: url(${process.env.PUBLIC_URL + '/cover-1920.jpg'});
     background-color: white;
     background-size: cover;
     background-position: center;
@@ -52,7 +53,7 @@ const style = css`
       top: 0;
       width: 100%;
       height: 100%;
-      background-color: rgba(0, 0, 0, 0.7);
+      background-color: rgba(0, 0, 0, 0.8);
     }
   }
 `

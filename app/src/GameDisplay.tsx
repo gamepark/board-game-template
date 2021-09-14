@@ -38,6 +38,9 @@ const sampleCss = css`
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 3rem;
+  background-color: black;
+  padding: 0.5em;
+  border-radius: 1em;
 `
 
 const sampleImageCss = css`
