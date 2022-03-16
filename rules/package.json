@@ -19,7 +19,7 @@
   "dependencies": {
   },
   "devDependencies": {
-    "@gamepark/rules-api": "~5.8.2",
+    "@gamepark/rules-api": "~5.10.0",
     "i18next": "^21.2.4"
   }
 }
