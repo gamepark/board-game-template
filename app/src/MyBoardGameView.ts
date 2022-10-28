@@ -23,8 +23,8 @@ export default class MyBoardGameView implements Game<GameView, MoveView> {
    *
    * @return A MoveView which can be completely anticipated by the player or the spectator
    */
-  getAutomaticMove(): void | MoveView {
-    return
+  getAutomaticMoves(): MoveView[] {
+    return []
   }
 
   /**

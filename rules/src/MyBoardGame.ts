@@ -1,4 +1,4 @@
-import {SecretInformation, SequentialGame} from '@gamepark/rules-api'
+import {Rules, SecretInformation} from '@gamepark/rules-api'
 import GameState from './GameState'
 import GameView from './GameView'
 import {drawCard} from './moves/DrawCard'
@@ -16,7 +16,7 @@ import PlayerColor from './PlayerColor'
  * If the game contains information that some players know, but the other players does not, it must implement "SecretInformation" instead.
  * Later on, you can also implement "Competitive", "Undo", "TimeLimit" and "Eliminations" to add further features to the game.
  */
-export default class MyBoardGame extends SequentialGame<GameState, Move, PlayerColor>
+export default class MyBoardGame extends Rules<GameState, Move, PlayerColor>
   implements SecretInformation<GameState, GameView, Move, MoveView, PlayerColor> {
   /**
    * This constructor is called when the game "restarts" from a previously saved state.
@@ -41,22 +41,6 @@ export default class MyBoardGame extends SequentialGame<GameState, Move, PlayerC
   }
 
   /**
-   * @return True when game is over
-   */
-  isOver(): boolean {
-    return false
-  }
-
-  /**
-   * Retrieves the player which must act. It is used to secure the game and prevent players from acting outside their turns.
-   * Only required in a SequentialGame.
-   * @return The identifier of the player whose turn it is
-   */
-  getActivePlayer(): PlayerColor | undefined {
-    return undefined // You must return undefined only when game is over, otherwise the game will be blocked.
-  }
-
-  /**
    * Return the exhaustive list of moves that can be played by the active player.
    * This is used for 2 features:
    * - security (preventing unauthorized moves from being played);
@@ -68,8 +52,8 @@ export default class MyBoardGame extends SequentialGame<GameState, Move, PlayerC
    */
   getLegalMoves(): Move[] {
     return [
-      {type: MoveType.SpendGold, playerId: this.getActivePlayer()!, quantity: 5},
-      {type: MoveType.DrawCard, playerId: this.getActivePlayer()!}
+      {type: MoveType.SpendGold, playerId: PlayerColor.Red, quantity: 5},
+      {type: MoveType.DrawCard, playerId: PlayerColor.Red}
     ]
   }
 
@@ -92,7 +76,7 @@ export default class MyBoardGame extends SequentialGame<GameState, Move, PlayerC
    * Here is an example from monopoly: you roll a dice, then move you pawn accordingly.
    * A first solution would be to do both state updates at once, in a "complex move" (RollDiceAndMovePawn).
    * However, this first solution won't allow you to animate step by step what happened: the roll, then the pawn movement.
-   * "getAutomaticMove" is the solution to trigger multiple moves in a single action, and still allow for step by step animations.
+   * "getAutomaticMoves" is the solution to trigger multiple moves in a single action, and still allow for step by step animations.
    * => in that case, "RollDice" could set "pawnMovement = x" somewhere in the game state. Then getAutomaticMove will return "MovePawn" when
    * "pawnMovement" is defined in the state.
    * Of course, you must return nothing once all the consequences triggered by a decision are completed.
@@ -100,7 +84,7 @@ export default class MyBoardGame extends SequentialGame<GameState, Move, PlayerC
    *
    * @return The next automatic consequence that should be played in current game state.
    */
-  getAutomaticMove(): void | Move {
+  getAutomaticMoves(): Move[] {
     /**
      * Example:
      * for (const player of this.state.players) {
@@ -109,7 +93,7 @@ export default class MyBoardGame extends SequentialGame<GameState, Move, PlayerC
      *   }
      * }
      */
-    return
+    return []
   }
 
   /**

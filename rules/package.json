@@ -16,10 +16,11 @@
     "build": "tsc",
     "prepublishOnly": "tsc"
   },
-  "dependencies": {
+  "peerDependencies": {
+    "@gamepark/rules-api": "^5.19.0"
   },
   "devDependencies": {
-    "@gamepark/rules-api": "~5.10.0",
-    "i18next": "^21.2.4"
+    "@gamepark/rules-api": "~5.19.0",
+    "i18next": "^22.0.3"
   }
 }

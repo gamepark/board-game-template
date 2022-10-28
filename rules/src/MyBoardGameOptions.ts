@@ -2,6 +2,7 @@ import {OptionsSpec} from '@gamepark/rules-api'
 import {TFunction} from 'i18next'
 import GameState from './GameState'
 import PlayerColor, {playerColors} from './PlayerColor'
+import GameView from './GameView'
 
 /**
  * This is the options for each players in the game.
@@ -21,7 +22,7 @@ export type MyBoardGameOptions = {
  * @param arg GameState or Game options
  * @return true if arg is a Game options
  */
-export function isGameOptions(arg: GameState | MyBoardGameOptions): arg is MyBoardGameOptions {
+export function isGameOptions(arg: GameState | GameView | MyBoardGameOptions): arg is MyBoardGameOptions {
   return typeof (arg as GameState).deck === 'undefined'
 }
 
