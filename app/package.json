@@ -7,9 +7,9 @@
   "license": "ISC",
   "dependencies": {
     "@emotion/react": "^11.4.1",
-    "@gamepark/react-client": "~5.19.0",
+    "@gamepark/react-client": "~5.20.0",
     "@gamepark/react-components": "~5.12.0",
-    "@gamepark/rules-api": "~5.19.0",
+    "@gamepark/rules-api": "~5.20.0",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^12.0.0",
     "@testing-library/user-event": "^13.2.1",
