@@ -1,12 +1,12 @@
 /** @jsxImportSource @emotion/react */
-import GameView from '@gamepark/board-game-template/GameView'
 import {getPlayerName} from '@gamepark/board-game-template/MyBoardGameOptions'
 import {usePlayerId} from '@gamepark/react-client'
 import {useTranslation} from 'react-i18next'
+import Game from '@gamepark/board-game-template/Game'
 
 type Props = {
   loading: boolean
-  game?: GameView
+  game?: Game
 }
 
 export default function HeaderText({loading}: Props) {

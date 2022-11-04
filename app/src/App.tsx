@@ -1,5 +1,4 @@
 /** @jsxImportSource @emotion/react */
-import GameView from '@gamepark/board-game-template/GameView'
 import {FailuresDialog, FullscreenDialog, Menu, useGame} from '@gamepark/react-client'
 import {Header, ImagesLoader, LoadingScreen} from '@gamepark/react-components'
 import {useEffect, useState} from 'react'
@@ -8,9 +7,10 @@ import HTML5ToTouch from 'react-dnd-multi-backend/dist/cjs/HTML5toTouch'
 import GameDisplay from './GameDisplay'
 import HeaderText from './HeaderText'
 import Images from './images/Images'
+import Game from '@gamepark/board-game-template/Game'
 
 export default function App() {
-  const game = useGame<GameView>()
+  const game = useGame<Game>()
   const [imagesLoading, setImagesLoading] = useState(true)
   const [isJustDisplayed, setJustDisplayed] = useState(true)
   useEffect(() => {

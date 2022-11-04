@@ -6,7 +6,6 @@ import normalize from 'emotion-normalize'
 import {StrictMode} from 'react'
 import ReactDOM from 'react-dom'
 import App from './App'
-import MyBoardGameView from './MyBoardGameView'
 import translations from './translations.json'
 
 setupTranslation(translations)
@@ -60,7 +59,7 @@ const style = css`
 
 ReactDOM.render(
   <StrictMode>
-    <GameProvider game="my-board-game" Rules={MyBoardGame} RulesView={MyBoardGameView} optionsSpec={MyBoardGameOptionsSpec}>
+    <GameProvider game="my-board-game" Rules={MyBoardGame} optionsSpec={MyBoardGameOptionsSpec}>
       <App/>
     </GameProvider>
     <Global styles={[normalize, style]}/>

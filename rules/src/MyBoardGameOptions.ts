@@ -1,13 +1,12 @@
 import {OptionsSpec} from '@gamepark/rules-api'
 import {TFunction} from 'i18next'
-import GameState from './GameState'
-import PlayerColor, {playerColors} from './PlayerColor'
-import GameView from './GameView'
+import Game from './Game'
+import Color, {playerColors} from './Color'
 
 /**
- * This is the options for each players in the game.
+ * This is the options for each player in the game.
  */
-type MyBoardGamePlayerOptions = { id: PlayerColor }
+type MyBoardGamePlayerOptions = { id: Color }
 
 /**
  * This is the type of object that the game receives when a new game is started.
@@ -22,8 +21,8 @@ export type MyBoardGameOptions = {
  * @param arg GameState or Game options
  * @return true if arg is a Game options
  */
-export function isGameOptions(arg: GameState | GameView | MyBoardGameOptions): arg is MyBoardGameOptions {
-  return typeof (arg as GameState).deck === 'undefined'
+export function isGameOptions(arg: Game | MyBoardGameOptions): arg is MyBoardGameOptions {
+  return typeof (arg as Game).round === 'undefined'
 }
 
 /**
@@ -40,15 +39,15 @@ export const MyBoardGameOptionsSpec: OptionsSpec<MyBoardGameOptions> = {
   }
 }
 
-export function getPlayerName(playerId: PlayerColor, t: TFunction) {
+export function getPlayerName(playerId: Color, t: TFunction) {
   switch (playerId) {
-    case PlayerColor.Red:
+    case Color.Red:
       return t('Red player')
-    case PlayerColor.Blue:
+    case Color.Blue:
       return t('Blue player')
-    case PlayerColor.Green:
+    case Color.Green:
       return t('Green player')
-    case PlayerColor.Yellow:
+    case Color.Yellow:
       return t('Yellow player')
   }
 }
