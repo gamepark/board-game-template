@@ -94,7 +94,7 @@ Then, run:
 rclone config
 > n (For "New remote)
 name> [code of the game]
-Storage> 4 (Amazon S3 Compliant Storage Provider)
+Storage> s3 (Amazon S3 Compliant Storage Provider)
 provider> Other
 env_auth> false
 access_key_id> [Enter your access key id here - Never commit that on Git!]
