@@ -53,11 +53,12 @@ export default class MyBoardGame extends Rules<Game, Move, Color> {
    * @param move The move that should be applied to current state.
    */
   play(move: Move): void {
+    // Examples:
     /*switch (move.type) {
-      case MoveType.SpendGold:
-        return spendGold(this.state, move)
-      case MoveType.DrawCard:
-        return drawCard(this.state, move)
+      case MoveType.MoveCard:
+        this.state.card.find(card => card.id === move.id)!.location = move.location
+      case MoveType.NextTurn:
+        this.state.currentPlayer = this.state.players[(this.state.players.indexOf(this.state.currentPlayer) + 1) % this.state.players.length].id
     }*/
     super.play(move)
   }
