@@ -1,14 +1,17 @@
-import {css, Global} from '@emotion/react'
-import {MyBoardGameOptionsSpec} from '@gamepark/board-game-template/MyBoardGameOptions'
-import MyBoardGame from '@gamepark/board-game-template/MyBoardGame'
-import {GameProvider, setupTranslation} from '@gamepark/react-client'
+/** @jsxImportSource @emotion/react */
+import { css, Global } from '@emotion/react'
+import { MyBoardGameOptionsSpec } from '@gamepark/board-game-template/MyBoardGameOptions'
+import { MyBoardGame } from '@gamepark/board-game-template/MyBoardGame'
+import { GameProvider, MaterialGameAnimations, setupTranslation } from '@gamepark/react-game'
 import normalize from 'emotion-normalize'
-import {StrictMode} from 'react'
+import { StrictMode } from 'react'
 import ReactDOM from 'react-dom'
 import App from './App'
 import translations from './translations.json'
+import { Material } from './material/Material'
+import { Locators } from './locators/Locators'
 
-setupTranslation(translations)
+setupTranslation(translations, { debug: false })
 
 const style = css`
   html {
@@ -59,7 +62,8 @@ const style = css`
 
 ReactDOM.render(
   <StrictMode>
-    <GameProvider game="my-board-game" Rules={MyBoardGame} optionsSpec={MyBoardGameOptionsSpec}>
+    <GameProvider game="my-board-game" Rules={MyBoardGame} optionsSpec={MyBoardGameOptionsSpec}
+                  material={Material} locators={Locators} animations={new MaterialGameAnimations()}>
       <App/>
     </GameProvider>
     <Global styles={[normalize, style]}/>
