@@ -11,7 +11,7 @@ You must install [Git](https://git-scm.com/) on your computer, and create an acc
 
 Then, you need a repository for you game. You can either wait for us to create one, or use [our template on Github](https://github.com/gamepark/board-game-template) to [create a new repository](https://docs.github.com/fr/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template)
 
-We recommend to use this syntax to name the repository: "name-of-the-game"
+We recommend to use this syntax to name the repository: "name-of-your-game"
 
 ## 2. Start the game
 Use [Visual Studio Code](https://code.visualstudio.com/), [Webstorm](https://www.jetbrains.com/fr-fr/webstorm/) or any IDE you like to open the code on you computer.
@@ -39,6 +39,12 @@ Every game on Game Park has 2 parts: ["rules"](/rules) and ["app"](/app).
 The rules part contains the code that will run on Game Park servers once the game is deployed. Here we enforce the rules and the lifecycle of the game.
 
 The app part contains a [React](https://react.dev/) application, that will create static files and call the Game Park API to interact with other players in real-time.
+
+### 3.0 Rename the default values in the template
+
+Search and replace in **every file**:
+- `Game Template` => `Name of your Game`
+- `game-template` => `name-of-your-game`
 
 ### 3.1 The Material
 
