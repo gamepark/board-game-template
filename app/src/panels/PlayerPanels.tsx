@@ -2,7 +2,7 @@
 import { FC } from 'react'
 import { PlayerPanel, usePlayers } from '@gamepark/react-game'
 import { css } from '@emotion/react'
-import { PlayerColor } from '@gamepark/board-game-template/PlayerColor'
+import { PlayerColor } from '@gamepark/game-template/PlayerColor'
 
 export const PlayerPanels: FC<any> = () => {
   const players = usePlayers({ sortFromMe: true })

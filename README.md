@@ -62,7 +62,7 @@ We need both for a complete game state.
 
 Each game must implement the "Rules" API to run on Game Park.
 
-This is done inside this file: [MyBoardGame.ts](/rules/src/GameRules.ts) (Rename it after you game, for example "ChessRules.ts")
+This is done inside this file: [GameRules.ts](/rules/src/GameRules.ts) (Rename it after you game, for example "ChessRules.ts")
 
 It is a class that implement the Rules abstract class that comes from an external dependency: @gamepark/rules-api
 
@@ -128,7 +128,7 @@ Moves are also used to animate the material in the user interface.
 Moves are store in the database and sent on the network, so they must serialize into JSON and be as light as possible.
 
 ### Legal moves
-In [MyBoardGame.ts](/rules/src/GameRules.ts), you must implement either `isLegalMove` or `getLegalMoves` to secure what players can do at any state.
+In [GameRules.ts](/rules/src/GameRules.ts), you must implement either `isLegalMove` or `getLegalMoves` to secure what players can do at any state.
 
 *Use `getLegalMoves` if the number of legal moves is not to big: this way, you won't have to implement a robot to replace missing players.*
 
@@ -162,7 +162,7 @@ Then, run:
 ```
 rclone config
 > n (For "New remote)
-name> [code of the game]
+name> game-template
 Storage> s3 (Amazon S3 Compliant Storage Provider)
 provider> Other
 env_auth> false
@@ -180,7 +180,7 @@ Now, to deploy a new version of the board game, you have 2 command lines to run:
 
 ```
 yarn build
-rclone sync app/build [code-of-the-game]:[code-of-the-game].game-park.com --progress --s3-acl=public-read
+rclone sync app/build [game-template]:[game-template].game-park.com --progress --s3-acl=public-read
 ```
 
 More details about this deployment method here: https://www.clever-cloud.com/blog/engineering/2020/06/24/deploy-cellar-s3-static-site/

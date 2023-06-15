@@ -1,5 +1,5 @@
 {
-  "name": "@gamepark/board-game-template-app",
+  "name": "@gamepark/game-template-app",
   "version": "0.0.0",
   "private": true,
   "description": "The user interface of Game Template adaptation for Game Park",
@@ -56,7 +56,7 @@
   },
   "jest": {
     "moduleNameMapper": {
-      "^@gamepark/board-game-template/(.*)$": "<rootDir>/../rules/src/$1"
+      "^@gamepark/game-template/(.*)$": "<rootDir>/../rules/src/$1"
     }
   }
 }

@@ -1,7 +1,7 @@
 {
-  "name": "@gamepark/board-game-template",
+  "name": "@gamepark/game-template",
   "version": "0.0.0",
-  "description": "Board Game Template rules for Game Park",
+  "description": "The rules of Game Template adapted for Game Park",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [

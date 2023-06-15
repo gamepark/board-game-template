@@ -3,7 +3,7 @@ import { FailuresDialog, FullscreenDialog, LoadingScreen, MaterialHeader, Menu, 
 import { useEffect, useState } from 'react'
 import GameDisplay from './GameDisplay'
 import { MaterialGame } from '@gamepark/rules-api'
-import { RuleId } from '@gamepark/board-game-template/rules/RuleId'
+import { RuleId } from '@gamepark/game-template/rules/RuleId'
 import { ReactJSXElement } from '@emotion/react/types/jsx-namespace'
 import { GameOverHeader } from './headers/GameOverHeader'
 

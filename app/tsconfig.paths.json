@@ -3,7 +3,7 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@gamepark/board-game-template/*": ["../rules/src/*"]
+      "@gamepark/game-template/*": ["../rules/src/*"]
     }
   }
 }
