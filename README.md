@@ -62,7 +62,7 @@ We need both for a complete game state.
 
 Each game must implement the "Rules" API to run on Game Park.
 
-This is done inside this file: [MyBoardGame.ts](/rules/src/MyBoardGame.ts) (Rename it after you game, for example "ChessRules.ts")
+This is done inside this file: [MyBoardGame.ts](/rules/src/GameRules.ts) (Rename it after you game, for example "ChessRules.ts")
 
 It is a class that implement the Rules abstract class that comes from an external dependency: @gamepark/rules-api
 
@@ -128,7 +128,7 @@ Moves are also used to animate the material in the user interface.
 Moves are store in the database and sent on the network, so they must serialize into JSON and be as light as possible.
 
 ### Legal moves
-In [MyBoardGame.ts](/rules/src/MyBoardGame.ts), you must implement either `isLegalMove` or `getLegalMoves` to secure what players can do at any state.
+In [MyBoardGame.ts](/rules/src/GameRules.ts), you must implement either `isLegalMove` or `getLegalMoves` to secure what players can do at any state.
 
 *Use `getLegalMoves` if the number of legal moves is not to big: this way, you won't have to implement a robot to replace missing players.*
 

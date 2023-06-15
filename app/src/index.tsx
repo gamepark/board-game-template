@@ -1,7 +1,7 @@
 /** @jsxImportSource @emotion/react */
 import { css, Global } from '@emotion/react'
-import { MyBoardGameOptionsSpec } from '@gamepark/board-game-template/MyBoardGameOptions'
-import { MyBoardGame } from '@gamepark/board-game-template/MyBoardGame'
+import { GameOptionsSpec } from '@gamepark/board-game-template/GameOptions'
+import { GameRules } from '@gamepark/board-game-template/GameRules'
 import { GameProvider, MaterialGameAnimations, setupTranslation } from '@gamepark/react-game'
 import normalize from 'emotion-normalize'
 import { StrictMode } from 'react'
@@ -62,7 +62,7 @@ const style = css`
 
 ReactDOM.render(
   <StrictMode>
-    <GameProvider game="my-board-game" Rules={MyBoardGame} optionsSpec={MyBoardGameOptionsSpec}
+    <GameProvider game="my-board-game" Rules={GameRules} optionsSpec={GameOptionsSpec}
                   material={Material} locators={Locators} animations={new MaterialGameAnimations()}>
       <App/>
     </GameProvider>

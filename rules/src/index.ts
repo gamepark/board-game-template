@@ -1,2 +1,2 @@
-export { MyBoardGame } from './MyBoardGame'
-export { MyBoardGameOptionsSpec } from './MyBoardGameOptions'
+export { GameRules } from './GameRules'
+export { GameOptionsSpec } from './GameOptions'
