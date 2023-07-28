@@ -2,6 +2,8 @@ import { MaterialRules } from '@gamepark/rules-api'
 import { PlayerColor } from './PlayerColor'
 import { MaterialType } from './material/MaterialType'
 import { LocationType } from './material/LocationType'
+import { RuleId } from './rules/RuleId'
+import { PlayerTurn } from './rules/PlayerTurn'
 
 
 /**
@@ -9,10 +11,7 @@ import { LocationType } from './material/LocationType'
  * It must follow Game Park "Rules" API so that the Game Park server can enforce the rules.
  */
 export class GameRules extends MaterialRules<PlayerColor, MaterialType, LocationType> {
-  setup() {
-  }
-
-  get rules() {
-    return {}
+  rules = {
+    [RuleId.PlayerTurn]: PlayerTurn
   }
 }

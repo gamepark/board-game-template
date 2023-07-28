@@ -1421,10 +1421,10 @@
   resolved "https://registry.yarnpkg.com/@gamepark/avataaars/-/avataaars-2.2.0.tgz#7bc2b8246d847d8f66b67935d0ab247a7cceb477"
   integrity sha512-3rTwo+v87EO/GHcHjmpTqRcOdbh5MbO2Vv27xIGWdT3H2+SFSGlMwSCnn7kDQv+rQJzfg5C2gRe6XImiKcYlxA==
 
-"@gamepark/react-client@^6.0.6-alpha.0":
-  version "6.0.6-alpha.0"
-  resolved "https://registry.yarnpkg.com/@gamepark/react-client/-/react-client-6.0.6-alpha.0.tgz#57830426a0094e3393cbafa7a191688c4d1ccc92"
-  integrity sha512-LGYtvnLk8jUC5v5ELNIDvp98F4fy1uOvfDv+bhy5X3OG6VbVnbgP2jsLdbujEEYOcuRr3pOJWZ2L65FBEjd0fQ==
+"@gamepark/react-client@^6.1.0":
+  version "6.1.0"
+  resolved "https://registry.yarnpkg.com/@gamepark/react-client/-/react-client-6.1.0.tgz#b35c00364ad355fee39b510352eeda0daa3a75ab"
+  integrity sha512-mCmc2t9ucADc47c9VFHN4N3zgHdST7tU2PNH1ER7LmMClLzg2MOXYNhXXvwRbm9jGhQ0uqxPDo/hd+79RoVHPw==
   dependencies:
     "@harelpls/use-pusher" "^7.2.1"
     assert "^2.0.0"
@@ -1433,10 +1433,10 @@
     pusher-js "^7.0.0"
     redux "^4.2.1"
 
-"@gamepark/react-game@~6.0.0-alpha.0":
-  version "6.0.0-alpha.0"
-  resolved "https://registry.yarnpkg.com/@gamepark/react-game/-/react-game-6.0.0-alpha.0.tgz#4e4fc7841cfa09a367adc48254e12b44d8bca6f4"
-  integrity sha512-nQF0QQkcytCognfXATDyLYne//p7dPBE34CCTLna8d7DG243bW1MuKHQtbhqyCoZgEYiFqXHZpctrwrNMFmmEQ==
+"@gamepark/react-game@~6.1.0":
+  version "6.1.0"
+  resolved "https://registry.yarnpkg.com/@gamepark/react-game/-/react-game-6.1.0.tgz#b14bca7930c45416e92b6d146a05028fa0221038"
+  integrity sha512-ZvNh2TKuHc0MsuhUAZoR4qWLsdzsb3lmmI1MwvTqadkrljJscASJtjKN/lp8dYtsL5at2uVg5xYhfjJyiI/A/w==
   dependencies:
     "@apollo/client" "^3.5.0"
     "@datadog/browser-logs" "^4.42.0"
@@ -1446,9 +1446,10 @@
     "@fortawesome/free-solid-svg-icons" "^6.4.0"
     "@fortawesome/react-fontawesome" "^0.2.0"
     "@gamepark/avataaars" "^2.2.0"
-    "@gamepark/react-client" "^6.0.6-alpha.0"
-    "@gamepark/rules-api" "^6.0.6-alpha.0"
+    "@gamepark/react-client" "^6.1.0"
+    "@gamepark/rules-api" "^6.1.0"
     dayjs "^1.11.7"
+    emotion-normalize "^11.0.1"
     fscreen "^1.2.0"
     graphql "^15.3.0"
     i18next "^22.4.15"
@@ -1459,15 +1460,16 @@
     o9n "^2.1.1"
     react-custom-scrollbars-2 "^4.5.0"
     react-infinite-scroller "^1.2.6"
-    react-zoom-pan-pinch "^3.0.7"
+    react-merge-refs "^2.0.2"
+    react-zoom-pan-pinch "^3.1.0"
     stylis "^4.2.0"
     supports-webp "^3.0.0"
     use-long-press "^3.1.3"
 
-"@gamepark/rules-api@^6.0.6-alpha.0", "@gamepark/rules-api@~6.0.6-alpha.0":
-  version "6.0.6-alpha.0"
-  resolved "https://registry.yarnpkg.com/@gamepark/rules-api/-/rules-api-6.0.6-alpha.0.tgz#be1d8f88885bc9a4fceaa7385e8d09b1a6c08f62"
-  integrity sha512-iZmKx8EZEdd0unM9zTWinU1TUgLfCZiklN+wAQXZQRmkWI2U0UNTj43+BMBYgf9u+iNHYzE0XtsgU8ouQyrNXg==
+"@gamepark/rules-api@^6.1.0", "@gamepark/rules-api@~6.1.0":
+  version "6.1.0"
+  resolved "https://registry.yarnpkg.com/@gamepark/rules-api/-/rules-api-6.1.0.tgz#e8f383af645932b3d0cdfa127701e6f5b35c490d"
+  integrity sha512-Zs1Tu1cpxai20GzIhuL5x+mHTTRWmmj+WnzzyIfP5Q2kY4GqXQUnfaflWSMIpfBoBpPUTreo5fJdGluwqqR4sw==
   dependencies:
     fast-deep-equal "^3.1.3"
     lodash "^4.17.21"
@@ -10998,6 +11000,11 @@ react-is@^17.0.1, react-is@^17.0.2:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-17.0.2.tgz#e691d4a8e9c789365655539ab372762b0efb54f0"
   integrity sha512-w2GsyukL62IJnlaff/nRegPQR94C/XXamvMWmSHRJ4y7Ts/4ocGRmTHvOs8PSE6pB3dWOrD/nueuU5sduBsQ4w==
 
+react-merge-refs@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/react-merge-refs/-/react-merge-refs-2.0.2.tgz#73f576111124897dec4ea56035a97e199e8cb377"
+  integrity sha512-V5BGTwGa2r+/t0A/BZMS6L7VPXY0CU8xtAhkT3XUoI1WJJhhtvulvoiZkJ5Jt9YAW23m4xFWmhQ+C5HwjtTFhQ==
+
 react-redux@^7.2.4:
   version "7.2.6"
   resolved "https://registry.yarnpkg.com/react-redux/-/react-redux-7.2.6.tgz#49633a24fe552b5f9caf58feb8a138936ddfe9aa"
@@ -11070,10 +11077,10 @@ react-scripts@5.0.0:
   optionalDependencies:
     fsevents "^2.3.2"
 
-react-zoom-pan-pinch@^3.0.7:
-  version "3.0.8"
-  resolved "https://registry.yarnpkg.com/react-zoom-pan-pinch/-/react-zoom-pan-pinch-3.0.8.tgz#c649d644e8aef239afe678a65fd618e65746ddc9"
-  integrity sha512-z6O5SV5X+XBo/LLO59PgzNE2WT+tp8lw1w3M0y138jCXViwHWKK1MqorICbmSVSOOD5Fa2o6pcg1ppJj9vzqJA==
+react-zoom-pan-pinch@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/react-zoom-pan-pinch/-/react-zoom-pan-pinch-3.1.0.tgz#d87a66fd22a97f5dd56b54076411a9dce1f448cd"
+  integrity sha512-a3LlP8QPgTikvteCNkZ3X6wIWC0lrg1geP5WkUJyx2MXXAhHQek3r17N1nT/esOiWGuPIECnsd9AGoK8jOeGcg==
 
 react@^17.0.2:
   version "17.0.2"

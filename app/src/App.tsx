@@ -6,6 +6,7 @@ import { MaterialGame } from '@gamepark/rules-api'
 import { RuleId } from '@gamepark/game-template/rules/RuleId'
 import { ReactJSXElement } from '@emotion/react/types/jsx-namespace'
 import { GameOverHeader } from './headers/GameOverHeader'
+import { PlayerTurnHeader } from './headers/PlayerTurnHeader'
 
 export default function App() {
   const game = useGame<MaterialGame>()
@@ -16,9 +17,9 @@ export default function App() {
   const loading = !game || isJustDisplayed
   return (
     <>
-      {!loading && <GameDisplay/>}
+      <GameDisplay/>
       <LoadingScreen display={loading} author="Someone" artist="Somebody" publisher="Nobody" developer="You"/>
-      <MaterialHeader rulesStepsHeaders={RulesHeaders} GameOver={GameOverHeader}/>
+      <MaterialHeader rulesStepsHeaders={RulesHeaders} GameOver={GameOverHeader} loading={loading}/>
       <Menu/>
       <FailuresDialog/>
       <FullscreenDialog/>
@@ -27,4 +28,5 @@ export default function App() {
 }
 
 const RulesHeaders: Record<RuleId, () => ReactJSXElement> = {
+  [RuleId.PlayerTurn]: PlayerTurnHeader
 }
