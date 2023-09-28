@@ -5,7 +5,6 @@ import GameDisplay from './GameDisplay'
 import { MaterialGame } from '@gamepark/rules-api'
 import { RuleId } from '@gamepark/game-template/rules/RuleId'
 import { ReactJSXElement } from '@emotion/react/types/jsx-namespace'
-import { GameOverHeader } from './headers/GameOverHeader'
 import { PlayerTurnHeader } from './headers/PlayerTurnHeader'
 
 export default function App() {
@@ -19,7 +18,7 @@ export default function App() {
     <>
       <GameDisplay/>
       <LoadingScreen display={loading} author="Someone" artist="Somebody" publisher="Nobody" developer="You"/>
-      <MaterialHeader rulesStepsHeaders={RulesHeaders} GameOver={GameOverHeader} loading={loading}/>
+      <MaterialHeader rulesStepsHeaders={RulesHeaders} loading={loading}/>
       <Menu/>
       <FailuresDialog/>
       <FullscreenDialog/>
