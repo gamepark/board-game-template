@@ -1,8 +1,8 @@
 /** @jsxImportSource @emotion/react */
-import { FC } from 'react'
-import { PlayerPanel, usePlayers } from '@gamepark/react-game'
 import { css } from '@emotion/react'
 import { PlayerColor } from '@gamepark/game-template/PlayerColor'
+import { PlayerPanel, usePlayers } from '@gamepark/react-game'
+import { FC } from 'react'
 
 export const PlayerPanels: FC<any> = () => {
   const players = usePlayers({ sortFromMe: true })

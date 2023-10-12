@@ -1,3 +1,3 @@
-export { GameRules } from './GameRules'
-export { GameOptionsSpec } from './GameOptions'
-export { GameSetup } from './GameSetup'
+export { GameTemplateRules } from './GameTemplateRules'
+export { GameOptionsSpec } from './GameTemplateOptions'
+export { GameTemplateSetup } from './GameTemplateSetup'

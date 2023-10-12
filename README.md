@@ -44,6 +44,7 @@ The app part contains a [React](https://react.dev/) application, that will creat
 
 Search and replace in **every file**:
 - `Game Template` => `Name of your Game`
+- `GameTemplate` => `NameOfYourGame`
 - `game-template` => `name-of-your-game`
 
 ### 3.1 The Material
@@ -120,7 +121,7 @@ export class PlayerHandLocator extends HandLocator<PlayerColor, MaterialType, Lo
 
 ### 3.3 The setup
 
-Once you have one Material type and one Location type, you can start to setup a new game in [GameRules.ts](/rules/src/GameRules.ts)
+Once you have one Material type and one Location type, you can start to setup a new game in [GameTemplateRules.ts](/rules/src/GameTemplateRules.ts)
 
 You can easily create and manipulate the material in the setup:
 

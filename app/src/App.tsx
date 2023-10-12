@@ -1,10 +1,10 @@
 /** @jsxImportSource @emotion/react */
+import { ReactJSXElement } from '@emotion/react/types/jsx-namespace'
+import { RuleId } from '@gamepark/game-template/rules/RuleId'
 import { FailuresDialog, FullscreenDialog, LoadingScreen, MaterialHeader, Menu, useGame } from '@gamepark/react-game'
+import { MaterialGame } from '@gamepark/rules-api'
 import { useEffect, useState } from 'react'
 import GameDisplay from './GameDisplay'
-import { MaterialGame } from '@gamepark/rules-api'
-import { RuleId } from '@gamepark/game-template/rules/RuleId'
-import { ReactJSXElement } from '@emotion/react/types/jsx-namespace'
 import { PlayerTurnHeader } from './headers/PlayerTurnHeader'
 
 export default function App() {
@@ -26,6 +26,6 @@ export default function App() {
   )
 }
 
-const RulesHeaders: Record<RuleId, () => ReactJSXElement> = {
+const RulesHeaders: Partial<Record<RuleId, () => ReactJSXElement>> = {
   [RuleId.PlayerTurn]: PlayerTurnHeader
 }
