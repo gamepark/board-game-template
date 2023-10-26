@@ -10,6 +10,9 @@
     "lerna": "^4.0.0",
     "typescript": "^4.4.2"
   },
+  "resolutions": {
+    "@types/react": "^17"
+  },
   "scripts": {
     "linkall": "yarn link react @types/react react-dom react-redux @dnd-kit/core @emotion/react react-i18next @gamepark/rules-api @gamepark/react-client @gamepark/react-game",
     "unlinkall": "yarn unlink react @types/react react-dom react-redux @dnd-kit/core @emotion/react react-i18next @gamepark/rules-api @gamepark/react-client @gamepark/react-game",
