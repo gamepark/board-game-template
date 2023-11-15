@@ -1561,10 +1561,10 @@
   resolved "https://registry.yarnpkg.com/@gamepark/avataaars/-/avataaars-2.2.0.tgz#7bc2b8246d847d8f66b67935d0ab247a7cceb477"
   integrity sha512-3rTwo+v87EO/GHcHjmpTqRcOdbh5MbO2Vv27xIGWdT3H2+SFSGlMwSCnn7kDQv+rQJzfg5C2gRe6XImiKcYlxA==
 
-"@gamepark/react-client@^6.13.0":
-  version "6.13.0"
-  resolved "https://registry.yarnpkg.com/@gamepark/react-client/-/react-client-6.13.0.tgz#3fed9a322a7a004da188ba1c8ba373f0170beff1"
-  integrity sha512-42E5ItegiWU7f7RacYAdHBu0/4oy96cq52cexQwGFQMDXkIjZwps6ZbCV3csr3Dqrq1yxZQ1jCwcwwzbCuOFTw==
+"@gamepark/react-client@^6.13.1":
+  version "6.13.1"
+  resolved "https://registry.yarnpkg.com/@gamepark/react-client/-/react-client-6.13.1.tgz#7f9f8a31edfc9bef0e2f94eb83ca152125e849ff"
+  integrity sha512-Lbf1cyw7+EJoFr12VxKSQh9y1djd1cGBKJCkHt4c3CZ0L7oxp3ZV7hX+sn2ArtArt/Vpop/BwxDSpoli1050hg==
   dependencies:
     "@harelpls/use-pusher" "^7.2.1"
     assert "^2.0.0"
@@ -1573,10 +1573,10 @@
     pusher-js "^7.0.0"
     redux "^4.2.1"
 
-"@gamepark/react-game@~6.13.0":
-  version "6.13.0"
-  resolved "https://registry.yarnpkg.com/@gamepark/react-game/-/react-game-6.13.0.tgz#d364e569b5af27dda66036fee6f8b68ccd55fb6a"
-  integrity sha512-T0igXVM8SDX3QelQekKwoM6dRNqk6J210iF4gb9c2JEgbYpFSp1a5tzVipHl5kpprwI45qLTeC6Eh8CPRTDkxA==
+"@gamepark/react-game@~6.13.1":
+  version "6.13.1"
+  resolved "https://registry.yarnpkg.com/@gamepark/react-game/-/react-game-6.13.1.tgz#23dceed6d98addf74158028931be056bc0c027bf"
+  integrity sha512-TKMx3CUg05SC9tbXBzxdRKTxFnIL7YngHHi/vlUmpfFoqSRG5Bg1cSpyggd7ZuPMrBHj9y80D5p2kLjre4QY2g==
   dependencies:
     "@apollo/client" "^3.5.0"
     "@datadog/browser-logs" "^4.42.0"
@@ -1586,8 +1586,8 @@
     "@fortawesome/free-solid-svg-icons" "^6.4.0"
     "@fortawesome/react-fontawesome" "^0.2.0"
     "@gamepark/avataaars" "^2.2.0"
-    "@gamepark/react-client" "^6.13.0"
-    "@gamepark/rules-api" "^6.13.0"
+    "@gamepark/react-client" "^6.13.1"
+    "@gamepark/rules-api" "^6.13.1"
     dayjs "^1.11.7"
     emotion-normalize "^11.0.1"
     fscreen "^1.2.0"
@@ -1605,10 +1605,10 @@
     supports-webp "^3.0.0"
     use-long-press "^3.1.3"
 
-"@gamepark/rules-api@^6.13.0", "@gamepark/rules-api@~6.13.0":
-  version "6.13.0"
-  resolved "https://registry.yarnpkg.com/@gamepark/rules-api/-/rules-api-6.13.0.tgz#44ba48d59f6534704156d1b0d5260a9db9883431"
-  integrity sha512-Ek0u3Qo7LZ3nVPWWkSrWkF7fmKzpq6D1IoGPYxxRGrLWLO+oI1JA515Alho+HAQTmAoMcE3TKAvuehcTIsQGdQ==
+"@gamepark/rules-api@^6.13.1", "@gamepark/rules-api@~6.13.1":
+  version "6.13.1"
+  resolved "https://registry.yarnpkg.com/@gamepark/rules-api/-/rules-api-6.13.1.tgz#82ad8eb41af4f60a30ab885a067b0c87baa869e9"
+  integrity sha512-HJISWxEAaASw89e4IQ4KgVeqvWyqZTe8pTshlaxc8fUlU5tvICKzg7rrqb5TFJ5eNOZK5ZeWbDHKx5nioB7W9Q==
   dependencies:
     fast-deep-equal "^3.1.3"
     lodash "^4.17.21"

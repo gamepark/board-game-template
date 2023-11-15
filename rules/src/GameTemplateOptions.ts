@@ -19,7 +19,7 @@ export type GameTemplateOptions = {
  * This object describes all the options a game can have, and will be used by GamePark website to create automatically forms for you game
  * (forms for friendly games, or forms for matchmaking preferences, for instance).
  */
-export const GameOptionsSpec: OptionsSpec<GameTemplateOptions> = {
+export const GameTemplateOptionsSpec: OptionsSpec<GameTemplateOptions> = {
   players: {
     id: {
       label: (t: TFunction) => t('Player color'),

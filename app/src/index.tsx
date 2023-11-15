@@ -1,5 +1,5 @@
 /** @jsxImportSource @emotion/react */
-import { GameOptionsSpec } from '@gamepark/game-template/GameTemplateOptions'
+import { GameTemplateOptionsSpec } from '@gamepark/game-template/GameTemplateOptions'
 import { GameTemplateRules } from '@gamepark/game-template/GameTemplateRules'
 import { GameTemplateSetup } from '@gamepark/game-template/GameTemplateSetup'
 import { GameProvider, MaterialGameAnimations, setupTranslation } from '@gamepark/react-game'
@@ -14,7 +14,7 @@ setupTranslation(translations, { debug: false })
 
 ReactDOM.render(
   <StrictMode>
-    <GameProvider game="game-template" Rules={GameTemplateRules} optionsSpec={GameOptionsSpec} GameSetup={GameTemplateSetup}
+    <GameProvider game="game-template" Rules={GameTemplateRules} optionsSpec={GameTemplateOptionsSpec} GameSetup={GameTemplateSetup}
                   material={Material} locators={Locators} animations={new MaterialGameAnimations()}>
       <App/>
     </GameProvider>
