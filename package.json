@@ -20,6 +20,7 @@
     "unlinkgp": "yarn unlink @gamepark/react-client @gamepark/rules-api @gamepark/react-game",
     "start": "yarn workspace @gamepark/game-template-app run start",
     "build": "yarn workspace @gamepark/game-template-app run build",
-    "deploy": "yarn workspace @gamepark/game-template-app run deploy"
+    "deploy": "yarn workspace @gamepark/game-template-app run deploy",
+    "cwebp-osx": "rm -f ./node_modules/cwebp-bin/vendor/cwebp && ln -s /opt/homebrew/bin/cwebp ./node_modules/cwebp-bin/vendor/cwebp"
   }
 }
