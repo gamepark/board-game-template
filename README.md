@@ -7,14 +7,19 @@ First, make sure you have an agreement with us about the game you are going to a
 Then, let's code 🙂
 
 ## 1. Create a new project
+
 You must install [Git](https://git-scm.com/) on your computer, and create an account on [Github](https://github.com/) if you do not have one.
 
-Then, you need a repository for you game. You can either wait for us to create one, or use [our template on Github](https://github.com/gamepark/board-game-template) to [create a new repository](https://docs.github.com/fr/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template)
+Then, you need a repository for you game. You can either wait for us to create one, or
+use [our template on Github](https://github.com/gamepark/board-game-template)
+to [create a new repository](https://docs.github.com/fr/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template)
 
 We recommend to use this syntax to name the repository: "name-of-your-game"
 
 ## 2. Start the game
-Use [Visual Studio Code](https://code.visualstudio.com/), [Webstorm](https://www.jetbrains.com/fr-fr/webstorm/) or any IDE you like to open the code on you computer.
+
+Use [Visual Studio Code](https://code.visualstudio.com/), [Webstorm](https://www.jetbrains.com/fr-fr/webstorm/) or any IDE you like to open the code on you
+computer.
 
 You must also install [Node.js](https://nodejs.org/) and [Yarn](https://yarnpkg.com/)
 
@@ -24,7 +29,8 @@ You must install the dependencies using Yarn. Run this command line in the proje
 
 Now, you should be able to start the game on your computer: `yarn start`
 
-It should open a browser window on http://localhost:3000 and display the first version of your game. It is a debug session: if you change something in the code, it will automatically apply the changes!
+It should open a browser window on http://localhost:3000 and display the first version of your game. It is a debug session: if you change something in the code,
+it will automatically apply the changes!
 
 This version does not interact with Game Park servers. It is 100% local. Inside the console of this browser window, you can run those commands:
 
@@ -38,11 +44,13 @@ Every game on Game Park has 2 parts: ["rules"](/rules) and ["app"](/app).
 
 The rules part contains the code that will run on Game Park servers once the game is deployed. Here we enforce the rules and the lifecycle of the game.
 
-The app part contains a [React](https://react.dev/) application, that will create static files and call the Game Park API to interact with other players in real-time.
+The app part contains a [React](https://react.dev/) application, that will create static files and call the Game Park API to interact with other players in
+real-time.
 
 ### 3.0 Rename the default values in the template
 
 Search and replace in **every file**:
+
 - `Game Template` => `Name of your Game`
 - `GameTemplate` => `NameOfYourGame`
 - `game-template` => `name-of-your-game`
@@ -56,6 +64,7 @@ The file [MaterialType.ts](/rules/src/material/MaterialType.ts) lists the types 
 _Tips: add you material types one by one. If you have different kinds of boards, cards or token that never mix together, use a different type for each of them._
 
 Example:
+
 ```
 export enum MaterialType {
   Card = 1
@@ -65,6 +74,7 @@ export enum MaterialType {
 When you add a new MaterialType in the rules, you have to describe how it looks like in the app, inside [Material.tsx](/app/src/material/Material.tsx).
 
 Example:
+
 ```
 import back from '../images/cards/back.jpg'
 import card1 from '../images/cards/card-1.jpg'
@@ -80,15 +90,11 @@ export const CardsDescription: CardMaterialDescription = {
   props: {
     height: 8.8,
     ratio: 5 / 7,
-    back: {
-      image: back
-    },
-    front: {
-      image: {
-        [TheCardEnumId.SomeId1]: card1,
-        [TheCardEnumId.SomeId2]: card2,
-        [TheCardEnumId.SomeId3]: card3
-      }
+    backImage: back
+    images: {
+      [TheCardEnumId.SomeId1]: card1,
+      [TheCardEnumId.SomeId2]: card2,
+      [TheCardEnumId.SomeId3]: card3
     }
   }
 }
@@ -107,6 +113,7 @@ _Tips: add you location types one by one. Locations are used to position the Mat
 When you add a new LocationType in the rules, you have to create a new "Locator" in the app, inside [Locators.tsx](/app/src/locators/Locators.tsx).
 
 Example:
+
 ```
 export const Locators: Record<LocationType, ItemLocator<PlayerColor, MaterialType, LocationType>> = {
   [LocationType.Hand]: new PlayerHandLocator(),
