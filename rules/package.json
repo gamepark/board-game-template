@@ -15,7 +15,8 @@
   },
   "scripts": {
     "build": "tsc",
-    "prepublishOnly": "tsc"
+    "prepublishOnly": "tsc",
+    "publish": "lerna publish"
   },
   "peerDependencies": {
     "@gamepark/rules-api": ">=6.16"
