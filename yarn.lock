@@ -1568,10 +1568,10 @@
   resolved "https://registry.yarnpkg.com/@gamepark/avataaars/-/avataaars-2.2.0.tgz#7bc2b8246d847d8f66b67935d0ab247a7cceb477"
   integrity sha512-3rTwo+v87EO/GHcHjmpTqRcOdbh5MbO2Vv27xIGWdT3H2+SFSGlMwSCnn7kDQv+rQJzfg5C2gRe6XImiKcYlxA==
 
-"@gamepark/react-client@~6.22.0":
-  version "6.22.0"
-  resolved "https://registry.yarnpkg.com/@gamepark/react-client/-/react-client-6.22.0.tgz#fc6faf06d8bfc0efa447b23ef42214a2122760b1"
-  integrity sha512-KiLHiopKm8/RN6ut+nomC+AvXlwZ16W1sSOUWj9Sul2Vz5rAX4bXb3q24l4LSU5AFZpcty6EWNQSKL+x3Tm4Ew==
+"@gamepark/react-client@~6.24.1":
+  version "6.24.1"
+  resolved "https://registry.yarnpkg.com/@gamepark/react-client/-/react-client-6.24.1.tgz#829dbeeeea6aeac02200cb7f4dce28cf5750e9ff"
+  integrity sha512-gdZOZOXCzEg3bptfABc+jF05y0FKbSI9Or47DRU/OY0Oue4wUuRIlavBr1Ab3pQyr4ogI5GWpOwdKLXSymqOzw==
   dependencies:
     "@harelpls/use-pusher" "^7.2.1"
     assert "^2.0.0"
@@ -1580,10 +1580,10 @@
     pusher-js "^7.0.0"
     redux "^4.2.1"
 
-"@gamepark/react-game@~6.22.0":
-  version "6.22.0"
-  resolved "https://registry.yarnpkg.com/@gamepark/react-game/-/react-game-6.22.0.tgz#351f7c82cddbfb4e13f43af5f1707eb2c9956225"
-  integrity sha512-bW+cAdJAUajDaKYwxJrXO821H5CTFNXXdH4nwsvD+RK+lHZK75CFQfNDlEbGdyk/cK+NnF7AvWh2+wd3im4miw==
+"@gamepark/react-game@~6.24.1":
+  version "6.24.1"
+  resolved "https://registry.yarnpkg.com/@gamepark/react-game/-/react-game-6.24.1.tgz#1cd7caffeda77a0ea9c9b592651d512cec67a90a"
+  integrity sha512-7PLgPIp72El3ZOjDXT81faw6G1PyReZ0RvwZvjPacDp6yyNm8AQZrkVflVUcTHQ82fFoliBbFnbDIroiA9uGhA==
   dependencies:
     "@apollo/client" "^3.5.0"
     "@datadog/browser-logs" "^4.42.0"
@@ -1593,8 +1593,8 @@
     "@fortawesome/free-solid-svg-icons" "^6.4.0"
     "@fortawesome/react-fontawesome" "^0.2.0"
     "@gamepark/avataaars" "^2.2.0"
-    "@gamepark/react-client" "~6.22.0"
-    "@gamepark/rules-api" "~6.22.0"
+    "@gamepark/react-client" "~6.24.1"
+    "@gamepark/rules-api" "~6.24.1"
     dayjs "^1.11.7"
     emotion-normalize "^11.0.1"
     fscreen "^1.2.0"
@@ -1607,15 +1607,15 @@
     o9n "^2.1.1"
     react-infinite-scroller "^1.2.6"
     react-merge-refs "^2.0.2"
-    react-zoom-pan-pinch "3.1.0"
+    react-zoom-pan-pinch "3.6.0"
     stylis "^4.2.0"
     supports-webp "^3.0.0"
     use-long-press "^3.1.3"
 
-"@gamepark/rules-api@~6.22.0":
-  version "6.22.0"
-  resolved "https://registry.yarnpkg.com/@gamepark/rules-api/-/rules-api-6.22.0.tgz#e6008bc26c73b6661407271f5515d28641258df5"
-  integrity sha512-Vzq7GZmeHwvwmyjHu3eMey5gGMFYiAtZIPSGsozNuanhPouBHR1PmywMq3e7ygTUvR9rF37U2NFjxkijvOp58Q==
+"@gamepark/rules-api@~6.24.1":
+  version "6.24.1"
+  resolved "https://registry.yarnpkg.com/@gamepark/rules-api/-/rules-api-6.24.1.tgz#a92cefd8af41a2dd08768d44e4dcb8c2b6cbffe1"
+  integrity sha512-h0VmBwYQv9V8TIUCnHFj1qJDYUT3hNrcIfup1VFhyNhlOM2Hp3VVvz0al760/Aq5yFoGPRH60pjyTgkqpEphMg==
 
 "@gar/promisify@^1.0.1":
   version "1.1.3"
@@ -11684,10 +11684,10 @@ react-scripts@^5.0.1:
   optionalDependencies:
     fsevents "^2.3.2"
 
-react-zoom-pan-pinch@3.1.0:
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/react-zoom-pan-pinch/-/react-zoom-pan-pinch-3.1.0.tgz#d87a66fd22a97f5dd56b54076411a9dce1f448cd"
-  integrity sha512-a3LlP8QPgTikvteCNkZ3X6wIWC0lrg1geP5WkUJyx2MXXAhHQek3r17N1nT/esOiWGuPIECnsd9AGoK8jOeGcg==
+react-zoom-pan-pinch@3.6.0:
+  version "3.6.0"
+  resolved "https://registry.yarnpkg.com/react-zoom-pan-pinch/-/react-zoom-pan-pinch-3.6.0.tgz#aea299a27d120a96b832fd953b2490ca9bfc4954"
+  integrity sha512-qLAFbDmlRwwJ7F3KXIoT5zxVZD34ZO0a5jI65URmTUjthapoQ0UCAF8oxpSJV0bSVszI5T3WV/U4Jd6ypwOnAQ==
 
 react@^17.0.2:
   version "17.0.2"
