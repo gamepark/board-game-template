@@ -5,6 +5,7 @@ import { GameTemplateSetup } from '@gamepark/game-template/GameTemplateSetup'
 import { GameProvider, MaterialGameAnimations, setupTranslation } from '@gamepark/react-game'
 import { StrictMode } from 'react'
 import ReactDOM from 'react-dom'
+import { gameAnimations } from './animations/GameAnimations'
 import App from './App'
 import { Locators } from './locators/Locators'
 import { Material } from './material/Material'
@@ -14,8 +15,14 @@ setupTranslation(translations, { debug: false })
 
 ReactDOM.render(
   <StrictMode>
-    <GameProvider game="game-template" Rules={GameTemplateRules} optionsSpec={GameTemplateOptionsSpec} GameSetup={GameTemplateSetup}
-                  material={Material} locators={Locators} animations={new MaterialGameAnimations()}>
+    <GameProvider
+      game="game-template"
+      Rules={GameTemplateRules}
+      optionsSpec={GameTemplateOptionsSpec}
+      GameSetup={GameTemplateSetup}
+      material={Material}
+      locators={Locators}
+      animations={gameAnimations}>
       <App/>
     </GameProvider>
   </StrictMode>,
