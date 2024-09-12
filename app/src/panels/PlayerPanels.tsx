@@ -26,7 +26,6 @@ const panelPosition = (index: number) => css`
   right: 1em;
   top: ${8.5 + index * 16}em;
   width: 28em;
-  height: 14em;
 `
 
 export const playerColorCode: Record<PlayerColor, string> = {
