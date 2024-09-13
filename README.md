@@ -82,22 +82,19 @@ import card2 from '../images/cards/card-2.jpg'
 import card3 from '../images/cards/card-3.jpg'
 
 export const Material: Record<MaterialType, MaterialDescription> = {
-  [MaterialType.Card]: CardsDescription,
+  [MaterialType.Card]: myCardDescription,
 }
 
-export const CardsDescription: CardMaterialDescription = {
-  type: MaterialComponentType.Card,
-  props: {
-    height: 8.8,
-    ratio: 5 / 7,
-    backImage: back
-    images: {
-      [TheCardEnumId.SomeId1]: card1,
-      [TheCardEnumId.SomeId2]: card2,
-      [TheCardEnumId.SomeId3]: card3
-    }
+class MyCardDescription extends CardDescription {
+  backImage: back
+  images: {
+    [TheCardEnumId.SomeId1]: card1,
+    [TheCardEnumId.SomeId2]: card2,
+    [TheCardEnumId.SomeId3]: card3
   }
 }
+
+export const myCardDescription = new MyCardDescription()
 ```
 
 ### 3.2 The Locations
@@ -120,9 +117,7 @@ export const Locators: Record<LocationType, Locator<PlayerColor, MaterialType, L
 }
 
 export class PlayerHandLocator extends HandLocator<PlayerColor, MaterialType, LocationType> {
-  getCoordinates() {
-    return { x: 0, y: 20, z: 10 }
-  }
+  coordinates = { x: 5, y: 20 }
 }
 ```
 
