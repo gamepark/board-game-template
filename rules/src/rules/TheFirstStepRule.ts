@@ -1,6 +1,6 @@
 import { PlayerTurnRule } from '@gamepark/rules-api'
 
-export class PlayerTurn extends PlayerTurnRule {
+export class TheFirstStepRule extends PlayerTurnRule {
   getPlayerMoves() {
     return []
   }
