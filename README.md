@@ -8,10 +8,10 @@ Then, let's code 🙂
 
 ## 1. Create a new project
 
-You must install [Git](https://git-scm.com/) on your computer, and create an account on [Github](https://github.com/) if you do not have one.
+You must install [Git](https://git-scm.com/) on your computer, and create an account on [GitHub](https://github.com/) if you do not have one.
 
 Then, you need a repository for you game. You can either wait for us to create one, or
-use [our template on Github](https://github.com/gamepark/board-game-template)
+use [our template on GitHub](https://github.com/gamepark/board-game-template)
 to [create a new repository](https://docs.github.com/fr/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template)
 
 We recommend to use this syntax to name the repository: "name-of-your-game"
@@ -71,7 +71,7 @@ export enum MaterialType {
 }
 ```
 
-When you add a new MaterialType in the rules, you have to describe how it looks like in the app, inside [Material.tsx](/app/src/material/Material.tsx).
+When you add a new MaterialType in the rules, you have to describe how it looks like in the app, inside [Material.ts](/app/src/material/Material.ts).
 
 Example:
 
@@ -107,7 +107,7 @@ The file [LocationType.ts](/rules/src/material/LocationType.ts) lists the types 
 
 _Tips: add you location types one by one. Locations are used to position the Material on the screen._
 
-When you add a new LocationType in the rules, you have to create a new "Locator" in the app, inside [Locators.tsx](/app/src/locators/Locators.tsx).
+When you add a new LocationType in the rules, you have to create a new "Locator" in the app, inside [Locators.ts](/app/src/locators/Locators.ts).
 
 Example:
 
