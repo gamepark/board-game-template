@@ -19,11 +19,11 @@
     "publish": "lerna publish"
   },
   "peerDependencies": {
-    "@gamepark/rules-api": ">=6.24",
+    "@gamepark/rules-api": ">=6.25",
     "lodash": ">=4.17"
   },
   "devDependencies": {
-    "@gamepark/rules-api": "~6.24.3",
+    "@gamepark/rules-api": "~6.25.0",
     "@types/lodash": "^4.17.7",
     "i18next": "^22.0.3",
     "lodash": "^4.17.21"
