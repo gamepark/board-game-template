@@ -2,7 +2,7 @@
 import { GameTemplateOptionsSpec } from '@gamepark/game-template/GameTemplateOptions'
 import { GameTemplateRules } from '@gamepark/game-template/GameTemplateRules'
 import { GameTemplateSetup } from '@gamepark/game-template/GameTemplateSetup'
-import { GameProvider, MaterialGameAnimations, setupTranslation } from '@gamepark/react-game'
+import { GameProvider, setupTranslation } from '@gamepark/react-game'
 import { StrictMode } from 'react'
 import ReactDOM from 'react-dom'
 import { gameAnimations } from './animations/GameAnimations'
