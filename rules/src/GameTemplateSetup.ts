@@ -16,6 +16,6 @@ export class GameTemplateSetup extends MaterialGameSetup<PlayerColor, MaterialTy
   }
 
   start() {
-    this.startPlayerTurn(RuleId.TheFirstStep, this.game.players[0])
+    this.startPlayerTurn(RuleId.TheFirstStep, this.players[0])
   }
 }
