@@ -181,7 +181,7 @@ Edit advanced config> n
 
 This configuration is only required once.
 
-Now you can deploy a new version of the react application with this command:
+Now you can deploy a new version of the React application with this command:
 
 ```
 yarn deploy
