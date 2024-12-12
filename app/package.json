@@ -8,6 +8,8 @@
   "dependencies": {
     "@dnd-kit/core": "^6.0.8",
     "@emotion/react": "^11.11.1",
+    "@fortawesome/free-solid-svg-icons": "^6.6.0",
+    "@fortawesome/react-fontawesome": "^0.2.2",
     "@gamepark/avataaars": "^2.2.0",
     "@gamepark/react-game": "~6.28.1",
     "@gamepark/rules-api": "~6.28.0",
