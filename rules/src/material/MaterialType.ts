@@ -1,2 +1,1 @@
-export enum MaterialType {
-}
+export enum MaterialType {}

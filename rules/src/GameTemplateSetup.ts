@@ -13,6 +13,7 @@ export class GameTemplateSetup extends MaterialGameSetup<PlayerColor, MaterialTy
   Rules = GameTemplateRules
 
   setupMaterial(_options: GameTemplateOptions) {
+    // TODO
   }
 
   start() {

@@ -22,8 +22,9 @@ ReactDOM.render(
       GameSetup={GameTemplateSetup}
       material={Material}
       locators={Locators}
-      animations={gameAnimations}>
-      <App/>
+      animations={gameAnimations}
+    >
+      <App />
     </GameProvider>
   </StrictMode>,
   document.getElementById('root')

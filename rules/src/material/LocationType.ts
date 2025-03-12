@@ -1,2 +1,1 @@
-export enum LocationType {
-}
+export enum LocationType {}
