@@ -1646,7 +1646,7 @@
   dependencies:
     prop-types "^15.8.1"
 
-"@gamepark/avataaars@^2.2.0", "@gamepark/avataaars@~2.2.0":
+"@gamepark/avataaars@~2.2.0":
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/@gamepark/avataaars/-/avataaars-2.2.0.tgz#7bc2b8246d847d8f66b67935d0ab247a7cceb477"
   integrity sha512-3rTwo+v87EO/GHcHjmpTqRcOdbh5MbO2Vv27xIGWdT3H2+SFSGlMwSCnn7kDQv+rQJzfg5C2gRe6XImiKcYlxA==
@@ -1663,10 +1663,10 @@
     pusher-js "^7.0.0"
     redux "^4.2.1"
 
-"@gamepark/react-game@~6.29.4":
-  version "6.29.4"
-  resolved "https://registry.yarnpkg.com/@gamepark/react-game/-/react-game-6.29.4.tgz#f0067e072d74403c538648c796a78e75ab6e2967"
-  integrity sha512-yTh9nCYPCAJpKAiGFtLFURTgka90D/TaA5hW8z2I4f5sp8Kk9AjyFAke0V1VYRh28JE1sGSjDIrMsoFsHkx8hQ==
+"@gamepark/react-game@~6.29.11":
+  version "6.29.11"
+  resolved "https://registry.yarnpkg.com/@gamepark/react-game/-/react-game-6.29.11.tgz#9aacae23ccc2ba5523182939b2aeaaec139408ae"
+  integrity sha512-hG3MUl6vc901Z9sJ5BSCKoiG5GZwvQ3HQ0fZpsjycwxNf84sN2K53R8fhhCD6t3xJcF7dt/vfRzGXuDQtMk7ag==
   dependencies:
     "@apollo/client" "^3.5.0"
     "@datadog/browser-logs" "^4.42.0"
@@ -1675,7 +1675,7 @@
     "@fortawesome/free-regular-svg-icons" "^6.6.0"
     "@fortawesome/free-solid-svg-icons" "^6.6.0"
     "@fortawesome/react-fontawesome" "^0.2.2"
-    "@gamepark/avataaars" "^2.2.0"
+    "@gamepark/avataaars" "~2.2.0"
     "@gamepark/react-client" "~6.29.3"
     "@gamepark/rules-api" "~6.29.3"
     dayjs "^1.11.7"
