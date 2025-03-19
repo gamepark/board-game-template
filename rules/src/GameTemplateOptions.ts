@@ -1,5 +1,4 @@
 import { OptionsSpec } from '@gamepark/rules-api'
-import { TFunction } from 'i18next'
 import { PlayerColor, playerColors } from './PlayerColor'
 
 /**
@@ -22,22 +21,9 @@ export type GameTemplateOptions = {
 export const GameTemplateOptionsSpec: OptionsSpec<GameTemplateOptions> = {
   players: {
     id: {
-      label: (t: TFunction) => t('Player color'),
+      label: (t) => t('player.id'),
       values: playerColors,
-      valueSpec: (color) => ({ label: t => getPlayerName(color, t) })
+      valueSpec: (id) => ({ label: (t) => t(`player.${id}`) })
     }
-  }
-}
-
-export function getPlayerName(playerId: PlayerColor, t: TFunction) {
-  switch (playerId) {
-    case PlayerColor.Red:
-      return t('Red')
-    case PlayerColor.Blue:
-      return t('Blue')
-    case PlayerColor.Green:
-      return t('Green')
-    case PlayerColor.Yellow:
-      return t('Yellow')
   }
 }
