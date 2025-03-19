@@ -44,12 +44,6 @@
     "deploy": "yarn build && rclone sync build game-template:game-template.game-park.com --progress --s3-acl=public-read",
     "lint": "eslint --fix"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
   "browserslist": {
     "production": [
       ">0.2%",

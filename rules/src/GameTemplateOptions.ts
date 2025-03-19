@@ -24,7 +24,7 @@ export const GameTemplateOptionsSpec: OptionsSpec<GameTemplateOptions> = {
     id: {
       label: (t: TFunction) => t('Player color'),
       values: playerColors,
-      valueSpec: color => ({ label: t => getPlayerName(color, t) })
+      valueSpec: (color) => ({ label: t => getPlayerName(color, t) })
     }
   }
 }
