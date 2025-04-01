@@ -20,13 +20,11 @@
     "lint": "eslint --fix"
   },
   "peerDependencies": {
-    "@gamepark/rules-api": ">=6.28",
+    "@gamepark/rules-api": ">=6.29",
     "lodash": ">=4.17"
   },
   "devDependencies": {
     "@gamepark/rules-api": "~6.30.0",
-    "@types/lodash": "^4.17.7",
-    "i18next": "^22.0.3",
-    "lodash": "^4.17.21"
+    "i18next": "^22.0.3"
   }
 }
