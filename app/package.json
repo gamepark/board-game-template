@@ -8,6 +8,8 @@
   "dependencies": {
     "@dnd-kit/core": "~6.1.0",
     "@emotion/react": "^11.11.1",
+    "@fortawesome/free-solid-svg-icons": "^6.6.0",
+    "@fortawesome/react-fontawesome": "^0.2.2",
     "@gamepark/avataaars": "~2.2.0",
     "@gamepark/react-game": "~6.30.2",
     "@gamepark/rules-api": "~6.30.0",
@@ -28,6 +30,7 @@
   },
   "devDependencies": {
     "@types/lodash": "^4.17.7",
+    "eslint-plugin-react": "^7.37.4",
     "image-minimizer-webpack-plugin": "^3.8.3",
     "imagemin": "^8.0.1",
     "imagemin-webp": "^8.0.0",
@@ -38,13 +41,8 @@
     "build": "react-app-rewired build",
     "test": "react-app-rewired test",
     "eject": "react-app-rewired eject",
-    "deploy": "yarn build && rclone sync build king-of-tokyo-duel:king-of-tokyo-duel.game-park.com --progress --s3-acl=public-read"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+    "deploy": "yarn build && rclone sync build game-template:game-template.game-park.com --progress --s3-acl=public-read",
+    "lint": "eslint --fix"
   },
   "browserslist": {
     "production": [
