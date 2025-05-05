@@ -179,7 +179,7 @@ acl> public-read
 Edit advanced config> n
 ```
 
-This configuration is only required once.
+This configuration is only required once per game.
 
 Now you can deploy a new version of the React application with this command:
 
