@@ -14,7 +14,7 @@ export const PlayerPanels = () => {
   return createPortal(
     <>
       {players.map((player, index) => (
-        <StyledPlayerPanel key={player.id} player={player} css={panelPosition(index)} />
+        <StyledPlayerPanel key={player.id} player={player} css={panelPosition(index)} activeRing />
       ))}
     </>,
     root
