@@ -1,5 +1,5 @@
-import { OptionsSpec } from '@gamepark/rules-api'
-import { PlayerColor, playerColors } from './PlayerColor'
+import { getEnumValues, OptionsSpec } from '@gamepark/rules-api'
+import { PlayerColor } from './PlayerColor'
 
 /**
  * This is the options for each player in the game.
@@ -22,7 +22,7 @@ export const GameTemplateOptionsSpec: OptionsSpec<GameTemplateOptions> = {
   players: {
     id: {
       label: (t) => t('player.id'),
-      values: playerColors,
+      values: getEnumValues(PlayerColor),
       valueSpec: (id) => ({ label: (t) => t(`player.${id}`) })
     }
   }
