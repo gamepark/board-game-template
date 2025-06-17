@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react'
 import { GameDisplay } from './GameDisplay'
 import { Headers } from './headers/Headers'
 
-export default function App() {
+export function App() {
   const game = useGame<MaterialGame>()
   const [isJustDisplayed, setJustDisplayed] = useState(true)
   const [isImagesLoading, setImagesLoading] = useState(true)
@@ -15,7 +15,7 @@ export default function App() {
   const loading = !game || isJustDisplayed || isImagesLoading
   return (
     <>
-      {!!game && <GameDisplay players={game.players.length} />}
+      {!!game && <GameDisplay />}
       <LoadingScreen display={loading} author="Someone" artist="Somebody" publisher="Nobody" developer="You" />
       <MaterialHeader rulesStepsHeaders={Headers} loading={loading} />
       <MaterialImageLoader onImagesLoad={() => setImagesLoading(false)} />

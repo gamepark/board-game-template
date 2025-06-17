@@ -1,14 +1,9 @@
 /** @jsxImportSource @emotion/react */
 import { css } from '@emotion/react'
 import { GameTable, GameTableNavigation } from '@gamepark/react-game'
-import { FC } from 'react'
 import { PlayerPanels } from './panels/PlayerPanels'
 
-type GameDisplayProps = {
-  players: number
-}
-
-export const GameDisplay: FC<GameDisplayProps> = () => {
+export function GameDisplay() {
   const margin = { top: 7, left: 0, right: 30, bottom: 0 }
   return (
     <>
