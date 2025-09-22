@@ -1,6 +1,5 @@
 {
   "compilerOptions": {
-    "moduleResolution": "node",
     "allowJs": false,
     "forceConsistentCasingInFileNames": true,
     "noImplicitReturns": true,
@@ -17,6 +16,7 @@
     "isolatedModules": true,
     "downlevelIteration": true,
     "skipLibCheck": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedSideEffectImports": true
   }
 }

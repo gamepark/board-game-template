@@ -1,17 +1,7 @@
 {
-  "extends": "./tsconfig.paths.json",
-  "compilerOptions": {
-    "module": "esnext",
-    "target": "es5",
-    "lib": [
-      "dom",
-      "es2019"
-    ],
-    "jsx": "react-jsx",
-    "jsxImportSource": "@emotion/react",
-    "noEmit": true
-  },
-  "include": [
-    "src"
+  "files": [],
+  "references": [
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.node.json" }
   ]
 }

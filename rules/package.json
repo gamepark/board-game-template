@@ -1,8 +1,9 @@
 {
   "name": "@gamepark/game-template",
-  "version": "0.0.0",
+  "version": "0.10.0",
   "description": "The rules of Game Template adapted for Game Park",
   "sideEffects": false,
+  "type": "module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
@@ -20,13 +21,11 @@
     "lint": "eslint --fix"
   },
   "peerDependencies": {
-    "@gamepark/rules-api": ">=6.38",
-    "lodash": ">=4.17"
+    "@gamepark/rules-api": ">=7",
+    "es-toolkit": "^1.39.10"
   },
   "devDependencies": {
-    "@gamepark/rules-api": "~6.38.0",
-    "@types/lodash": "^4.17.7",
-    "i18next": "^22.0.3",
-    "lodash": "^4.17.21"
+    "@gamepark/rules-api": "~7.0.0-beta.2",
+    "es-toolkit": "^1.39.10"
   }
 }

@@ -1,10 +1,9 @@
-/** @jsxImportSource @emotion/react */
 import { GameTemplateOptionsSpec } from '@gamepark/game-template/GameTemplateOptions'
 import { GameTemplateRules } from '@gamepark/game-template/GameTemplateRules'
 import { GameTemplateSetup } from '@gamepark/game-template/GameTemplateSetup'
 import { GameProvider, setupTranslation } from '@gamepark/react-game'
 import { StrictMode } from 'react'
-import ReactDOM from 'react-dom'
+import { createRoot } from 'react-dom/client'
 import { gameAnimations } from './animations/GameAnimations'
 import { App } from './App'
 import { Locators } from './locators/Locators'
@@ -13,7 +12,7 @@ import translations from './translations.json'
 
 setupTranslation(translations, { debug: false })
 
-ReactDOM.render(
+createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <GameProvider
       game="game-template"
@@ -26,6 +25,5 @@ ReactDOM.render(
     >
       <App />
     </GameProvider>
-  </StrictMode>,
-  document.getElementById('root')
+  </StrictMode>
 )

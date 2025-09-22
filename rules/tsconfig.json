@@ -1,15 +1,16 @@
 {
   "extends": "../tsconfig.json",
   "compilerOptions": {
-    "module": "commonjs",
-    "target": "es5",
+    "module": "ESNext",
+    "target": "ESNext",
     "lib": [
-      "es2019"
+      "ESNext"
     ],
+    "moduleResolution": "node",
     "declaration": true,
     "outDir": "dist",
     "rootDir": "src"
   },
   "include": ["src"],
-  "exclude": ["node_modules"]
+  "exclude": ["**/*.test.ts"]
 }

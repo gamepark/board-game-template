@@ -1,4 +1,3 @@
-/** @jsxImportSource @emotion/react */
 import { css } from '@emotion/react'
 import { PlayerColor } from '@gamepark/game-template/PlayerColor'
 import { StyledPlayerPanel, usePlayers } from '@gamepark/react-game'
