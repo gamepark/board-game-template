@@ -754,8 +754,8 @@ __metadata:
     "@fortawesome/free-regular-svg-icons": "npm:^7.0.1"
     "@fortawesome/free-solid-svg-icons": "npm:^7.0.1"
     "@fortawesome/react-fontawesome": "npm:^3.0.2"
-    "@gamepark/react-game": "npm:~7.0.0-beta.5"
-    "@gamepark/rules-api": "npm:~7.0.0-beta.2"
+    "@gamepark/react-game": "npm:~7.0.0"
+    "@gamepark/rules-api": "npm:~7.0.0"
     "@types/node": "npm:^24.5.0"
     "@types/react": "npm:^19.1.13"
     "@types/react-dom": "npm:^19.1.9"
@@ -781,7 +781,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@gamepark/game-template@workspace:rules"
   dependencies:
-    "@gamepark/rules-api": "npm:~7.0.0-beta.2"
+    "@gamepark/rules-api": "npm:~7.0.0"
     es-toolkit: "npm:^1.39.10"
   peerDependencies:
     "@gamepark/rules-api": ">=7"
@@ -812,9 +812,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@gamepark/react-game@npm:~7.0.0-beta.5":
-  version: 7.0.0
-  resolution: "@gamepark/react-game@npm:7.0.0"
+"@gamepark/react-game@npm:~7.0.0":
+  version: 7.0.1
+  resolution: "@gamepark/react-game@npm:7.0.1"
   dependencies:
     "@apollo/client": "npm:^4.0.5"
     "@datadog/browser-logs": "npm:^6.19.0"
@@ -822,7 +822,6 @@ __metadata:
     "@gamepark/avataaars": "npm:~3.0.0"
     "@gamepark/react-client": "npm:~7.0.0"
     dayjs: "npm:^1.11.18"
-    emotion-normalize: "npm:^11.0.1"
     fscreen: "npm:^1.2.0"
     graphql: "npm:^16.11.0"
     i18next-icu: "npm:^2.4.0"
@@ -849,11 +848,11 @@ __metadata:
     react-dom: ^19.1.1
     react-i18next: ^15.7.3
     react-redux: ^9.2.0
-  checksum: 10c0/1f0a3ae4958b7f37449fa9716eac02bfe4268817c45e21995b54395dd8a5675d112c493b9de246a65b1dc022000a5317dc96bbb066ed748b3b1b422ba0c0d956
+  checksum: 10c0/b52506af32b38d942c63b31210c473ab70189560d9b24e8bc856eeb605023a2c9b1537f695279e7de562ea86c810e0e639a7362159a04763c5939bfcba85fcce
   languageName: node
   linkType: hard
 
-"@gamepark/rules-api@npm:~7.0.0-beta.2":
+"@gamepark/rules-api@npm:~7.0.0":
   version: 7.0.0
   resolution: "@gamepark/rules-api@npm:7.0.0"
   peerDependencies:
@@ -3567,16 +3566,6 @@ __metadata:
   version: 9.2.2
   resolution: "emoji-regex@npm:9.2.2"
   checksum: 10c0/af014e759a72064cf66e6e694a7fc6b0ed3d8db680427b021a89727689671cefe9d04151b2cad51dbaf85d5ba790d061cd167f1cf32eb7b281f6368b3c181639
-  languageName: node
-  linkType: hard
-
-"emotion-normalize@npm:^11.0.1":
-  version: 11.0.1
-  resolution: "emotion-normalize@npm:11.0.1"
-  peerDependencies:
-    "@emotion/react": ^11.0.0
-    react: ">=16.3.0"
-  checksum: 10c0/19254ff13d12f463b5dc91b33c1a961f6bf4cefd1011979c1f8889cb84d8e86b83c770b516ec22a379142f9e8833e3d1e99e1c6052947d24ed13cc2abe8f5779
   languageName: node
   linkType: hard
 
