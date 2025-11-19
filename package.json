@@ -15,10 +15,12 @@
     "lerna": "^9.0.0",
     "prettier": "3.6.2",
     "typescript": "^5.9.2",
-    "typescript-eslint": "^8.44.0"
+    "typescript-eslint": "^8.44.0",
+    "vitest": "^4.0.10"
   },
   "scripts": {
     "dev": "yarn workspace @gamepark/game-template-app run dev",
+    "test": "yarn workspace @gamepark/game-template run test && yarn workspace @gamepark/game-template-app run test",
     "preview": "yarn workspace @gamepark/game-template-app run preview",
     "build": "yarn workspace @gamepark/game-template-app run build",
     "deploy": "yarn workspace @gamepark/game-template-app run deploy",
