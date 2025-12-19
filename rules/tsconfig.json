@@ -8,6 +8,8 @@
     ],
     "moduleResolution": "node",
     "declaration": true,
+    "sourceMap": true,
+    "declarationMap": true,
     "outDir": "dist",
     "rootDir": "src"
   },

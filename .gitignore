@@ -19,6 +19,10 @@ node_modules/
 .env.test.local
 .env.production.local
 
+# local settings
+settings.local.json
+.claude/settings.local.json
+
 .yarn/*
 !.yarn/cache
 !.yarn/patches

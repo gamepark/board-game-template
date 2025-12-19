@@ -1,6 +1,23 @@
-# How to adapt a game for Game Park!
+# Game Park - Board Game Template
 
-Welcome, developer! This documentation will guide you if you would like to adapt a game for [Game Park](https://game-park.com/).
+Welcome! This template helps you adapt board games for [Game Park](https://game-park.com/).
+
+## 📚 Complete Documentation
+
+**Rich documentation available in [`/docs`](./docs/README.md)!**
+
+This documentation includes:
+- 🚀 [Quick Start Guide](./docs/quick-start.md)
+- 🤖 [Working with Claude Code](./docs/working-with-claude.md) - AI-specific guide
+- 📋 [Complete Creation Checklist](./docs/reference/checklist.md)
+- 💡 [Patterns and Examples](./docs/patterns/README.md) extracted from 38+ existing games
+- 🔧 [Quick Reference](./docs/reference/README.md) - Commands and tips
+
+**Start by reading the [Quick Start Guide](./docs/quick-start.md)!**
+
+---
+
+## ⚠️ Important
 
 First, make sure you have an agreement with us about the game you are going to adapt.
 
