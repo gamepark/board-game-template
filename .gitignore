@@ -19,10 +19,13 @@ node_modules/
 .env.test.local
 .env.production.local
 
-# local settings
-settings.local.json
+# Claude Code local settings
 .claude/settings.local.json
 
+# Claude Code temporary files
+tmpclaude-*
+
+# Yarn v2+/Berry
 .yarn/*
 !.yarn/cache
 !.yarn/patches
