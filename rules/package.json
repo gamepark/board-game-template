@@ -28,6 +28,6 @@
   "devDependencies": {
     "@gamepark/rules-api": "~7.2.0",
     "es-toolkit": "^1.44.0",
-    "vitest": "^4.0.17"
+    "vitest": "^4.0.18"
   }
 }
