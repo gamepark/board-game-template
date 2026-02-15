@@ -2,8 +2,8 @@ import { MaterialGame, MaterialMove, MaterialRules, TimeLimit } from '@gamepark/
 import { LocationType } from './material/LocationType'
 import { MaterialType } from './material/MaterialType'
 import { PlayerColor } from './PlayerColor'
-import { TheFirstStepRule } from './rules/TheFirstStepRule'
 import { RuleId } from './rules/RuleId'
+import { TheFirstStepRule } from './rules/TheFirstStepRule'
 
 /**
  * This class implements the rules of the board game.
@@ -16,6 +16,8 @@ export class GameTemplateRules
   rules = {
     [RuleId.TheFirstStep]: TheFirstStepRule
   }
+
+  locationsStrategies = {}
 
   giveTime(): number {
     return 60
