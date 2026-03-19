@@ -12,7 +12,9 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "deploy": "yarn build && rclone sync dist game-template:game-template.game-park.com --progress --s3-acl=public-read"
+    "upload-sourcemaps": "datadog-ci sourcemaps upload dist/assets --service=game-template --release-version=$npm_package_version --minified-path-prefix=/assets/",
+    "sync": "npx rimraf dist/assets/*.map && rclone sync dist game-template:game-template.game-park.com --progress --s3-acl=public-read",
+    "deploy": "yarn build && node -e \"if(process.env.DATADOG_API_KEY){require('child_process').execSync('yarn upload-sourcemaps',{stdio:'inherit'})}\" && yarn sync"
   },
   "dependencies": {
     "@dnd-kit/core": "~6.3.1",
