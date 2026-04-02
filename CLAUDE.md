@@ -139,6 +139,24 @@ Similar games on GitHub (gamepark org) for inspiration:
 - **Along History** - Card game with effects
 - **District Noir** - Simple card game
 
+## Translations
+
+Translation files are located in `app/public/translation/` (one JSON file per language: `en.json`, `fr.json`, `de.json`, `es.json`, `it.json`, `ru.json`). The project uses `i18next` + `react-i18next`.
+
+### Translation workflow
+
+**During development**: only write translations in the **developer's native language** file (e.g. `fr.json` for a French developer). Do not touch other language files — this saves tokens.
+
+**Before production release**: when asked, translate all texts into every other supported language in a dedicated pass.
+
+### Where translations are used
+- `app/public/translation/*.json` — UI texts (headers, dialogs, tooltips, buttons)
+- `Headers.tsx` — uses `useTranslation()` to display in-game messages
+- `materialI18n` prop on `GameProvider` — localized material descriptions
+
+### Translation keys convention
+Follow existing key naming patterns in the JSON files. Keep keys descriptive and organized by feature/screen.
+
 ## When Helping
 
 1. **Always read existing code first** before suggesting changes
