@@ -23,11 +23,11 @@
   },
   "peerDependencies": {
     "@gamepark/rules-api": ">=7",
-    "es-toolkit": "^1.43.0"
+    "es-toolkit": "^1.45.1"
   },
   "devDependencies": {
-    "@gamepark/rules-api": "~7.6.1",
+    "@gamepark/rules-api": "~7.6.2",
     "es-toolkit": "^1.45.1",
-    "vitest": "^4.1.2"
+    "vitest": "^4.1.4"
   }
 }
