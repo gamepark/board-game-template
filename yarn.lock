@@ -781,15 +781,15 @@ __metadata:
     "@fortawesome/free-regular-svg-icons": "npm:^7.2.0"
     "@fortawesome/free-solid-svg-icons": "npm:^7.2.0"
     "@fortawesome/react-fontawesome": "npm:^3.3.0"
-    "@gamepark/react-game": "npm:~7.7.14"
-    "@gamepark/rules-api": "npm:~7.6.2"
+    "@gamepark/react-game": "npm:~7.7.16"
+    "@gamepark/rules-api": "npm:~7.6.3"
     "@types/node": "npm:^25.6.0"
     "@types/react": "npm:^19.2.14"
     "@types/react-dom": "npm:^19.2.3"
     "@vitejs/plugin-react-swc": "npm:^4.3.0"
     es-toolkit: "npm:^1.45.1"
     eslint: "npm:^10.2.0"
-    eslint-plugin-react-hooks: "npm:^7.0.1"
+    eslint-plugin-react-hooks: "npm:^7.1.0"
     eslint-plugin-react-refresh: "npm:^0.5.2"
     globals: "npm:^17.5.0"
     i18next: "npm:^25.10.10"
@@ -809,7 +809,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@gamepark/game-template@workspace:rules"
   dependencies:
-    "@gamepark/rules-api": "npm:~7.6.2"
+    "@gamepark/rules-api": "npm:~7.6.3"
     es-toolkit: "npm:^1.45.1"
     vitest: "npm:^4.1.4"
   peerDependencies:
@@ -818,9 +818,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@gamepark/react-client@npm:^7.6.4":
-  version: 7.6.4
-  resolution: "@gamepark/react-client@npm:7.6.4"
+"@gamepark/react-client@npm:^7.6.5":
+  version: 7.6.5
+  resolution: "@gamepark/react-client@npm:7.6.5"
   dependencies:
     "@reduxjs/toolkit": "npm:^2.11.2"
     "@tanstack/react-query": "npm:^5.90.21"
@@ -834,26 +834,26 @@ __metadata:
     superjson: "npm:^2.2.6"
   peerDependencies:
     "@gamepark/api-types": ^1.0.0
-    "@gamepark/rules-api": ^7.6.0
+    "@gamepark/rules-api": ^7.6.2
     dayjs: ^1.11.19
     es-toolkit: ^1.44.0
     react: ^19.2.4
     react-dom: ^19.2.4
     react-redux: ^9.2.0
     rxjs: ^7.8.2
-  checksum: 10c0/75c94fc6fbf3c4c0102f5e6506064b30a323b39839bf425e5f98882841b349d388d55297480272fa85a047540cfdc824856ebec70bd67f102129bc1507927d09
+  checksum: 10c0/6ad54d4791591054afa3dc186e19876f948fbbda903e25f6b2d6a2d27887f244e0a51b5455de9bfba1eca127dfa774c7696bcdf8f52f3fca61ebacb9a8423033
   languageName: node
   linkType: hard
 
-"@gamepark/react-game@npm:~7.7.14":
-  version: 7.7.14
-  resolution: "@gamepark/react-game@npm:7.7.14"
+"@gamepark/react-game@npm:~7.7.16":
+  version: 7.7.16
+  resolution: "@gamepark/react-game@npm:7.7.16"
   dependencies:
     "@datadog/browser-logs": "npm:^6.28.1"
     "@dnd-kit/modifiers": "npm:^9.0.0"
     "@gamepark/api-types": "npm:^1.0.1"
     "@gamepark/avataaars": "npm:^3.0.0"
-    "@gamepark/react-client": "npm:^7.6.4"
+    "@gamepark/react-client": "npm:^7.6.5"
     dayjs: "npm:^1.11.19"
     fscreen: "npm:^1.2.0"
     i18next-http-backend: "npm:^3.0.2"
@@ -881,16 +881,16 @@ __metadata:
     react-dom: 19.x
     react-i18next: 16.x
     react-redux: 9.x
-  checksum: 10c0/cf38dcb66b78daa662ed53277d01d257edadfba10f9089914b0a5231f8ccce18f97e2a358316f6ff9d4d8fc82d1d56252c205320d7f05fed7a980b540baf44e9
+  checksum: 10c0/124680fe4336e0791c261ab91001a300e34b14e19cacd2cae984e9a7acfdb4bd6bfe1a32117457cf402ecd2c5fd2bde4159e1d71087e0150adeda521db21efe8
   languageName: node
   linkType: hard
 
-"@gamepark/rules-api@npm:~7.6.2":
-  version: 7.6.2
-  resolution: "@gamepark/rules-api@npm:7.6.2"
+"@gamepark/rules-api@npm:~7.6.3":
+  version: 7.6.3
+  resolution: "@gamepark/rules-api@npm:7.6.3"
   peerDependencies:
     es-toolkit: ^1.39.10
-  checksum: 10c0/33ac8fbd413e56dadbeb9d29bb5c73295cab34577484b122dfd5d063087d350825597ac0636bb9e48524eb6ce849218728dd24fadacd4955147435e2982a58b9
+  checksum: 10c0/af9eefbb3df9913196ece36ac3ab84f3616176eee1f289207ba087a345395aaf5f41290fb361193a7a383f221742addd0a44258dc4ca4037d24a7f5b531ac496
   languageName: node
   linkType: hard
 
@@ -4359,9 +4359,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-react-hooks@npm:^7.0.1":
-  version: 7.0.1
-  resolution: "eslint-plugin-react-hooks@npm:7.0.1"
+"eslint-plugin-react-hooks@npm:^7.1.0":
+  version: 7.1.0
+  resolution: "eslint-plugin-react-hooks@npm:7.1.0"
   dependencies:
     "@babel/core": "npm:^7.24.4"
     "@babel/parser": "npm:^7.24.4"
@@ -4369,8 +4369,8 @@ __metadata:
     zod: "npm:^3.25.0 || ^4.0.0"
     zod-validation-error: "npm:^3.5.0 || ^4.0.0"
   peerDependencies:
-    eslint: ^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0-0 || ^9.0.0
-  checksum: 10c0/1e711d1a9d1fa9cfc51fa1572500656577201199c70c795c6a27adfc1df39e5c598f69aab6aa91117753d23cc1f11388579a2bed14921cf9a4efe60ae8618496
+    eslint: ^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0-0 || ^9.0.0 || ^10.0.0
+  checksum: 10c0/b65683a031cbfa44b2f78b15ab6b9fc7d9a0628bff2d6de8a52720b07866a60a1e78172127dd1397ce697ebab945467dc82dd4a24fdef5303b7a47920cb78609
   languageName: node
   linkType: hard
 
