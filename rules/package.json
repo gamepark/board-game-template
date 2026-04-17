@@ -16,8 +16,9 @@
   },
   "scripts": {
     "test": "vitest",
-    "build": "tsc",
-    "prepublishOnly": "tsc",
+    "check:cycles": "madge --circular --extensions ts src",
+    "build": "yarn check:cycles && tsc",
+    "prepublishOnly": "yarn check:cycles && tsc",
     "publish": "lerna publish",
     "lint": "eslint --fix"
   },
@@ -28,6 +29,7 @@
   "devDependencies": {
     "@gamepark/rules-api": "~7.6.3",
     "es-toolkit": "^1.45.1",
+    "madge": "^8.0.0",
     "vitest": "^4.1.4"
   }
 }
