@@ -14,7 +14,9 @@ export default tseslint.config([
             'react-hooks': reactHooks
         },
         rules: {
-            ...reactHooks.configs['recommended-latest'].rules
+            ...reactHooks.configs['recommended-latest'].rules,
+            '@typescript-eslint/no-unused-vars': ['warn', { argsIgnorePattern: '^_' }],
+            'react-refresh/only-export-components': ['warn', { allowConstantExport: true }]
         },
         languageOptions: {
             ecmaVersion: 2020,
