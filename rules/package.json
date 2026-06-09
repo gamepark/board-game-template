@@ -18,8 +18,8 @@
     "test": "vitest",
     "check:cycles": "madge --circular --extensions ts src",
     "build": "yarn check:cycles && tsc",
-    "prepublishOnly": "yarn check:cycles && tsc",
-    "publish": "lerna publish",
+    "prepack": "yarn build",
+    "publish": "yarn version ${0:-patch} && yarn npm publish && git commit -am v$(node -p \"require('./package.json').version\") && git tag v$(node -p \"require('./package.json').version\") && git push --follow-tags",
     "lint": "eslint --fix"
   },
   "peerDependencies": {

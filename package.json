@@ -12,7 +12,6 @@
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-prettier": "^5.5.6",
     "globals": "^17.6.0",
-    "lerna": "^9.0.7",
     "prettier": "^3.8.3",
     "typescript": "^5.9.3",
     "typescript-eslint": "^8.60.1",
@@ -24,7 +23,7 @@
     "preview": "yarn workspace @gamepark/game-template-app run preview",
     "build": "yarn workspace @gamepark/game-template-app run build",
     "deploy": "yarn workspace @gamepark/game-template-app run deploy",
-    "publish": "lerna publish",
+    "publish": "yarn workspace @gamepark/game-template run publish",
     "lint": "yarn workspace @gamepark/game-template run lint && yarn workspace @gamepark/game-template-app run lint",
     "linkgp": "yarn link ../rules-api ../react-client ../react-game -r && git update-index --skip-worktree package.json yarn.lock",
     "unlinkgp": "git update-index --no-skip-worktree package.json yarn.lock && yarn unlink ../react-game ../react-client ../rules-api"
