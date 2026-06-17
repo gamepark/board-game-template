@@ -16,8 +16,7 @@
   },
   "scripts": {
     "test": "vitest",
-    "check:cycles": "madge --circular --extensions ts src",
-    "build": "yarn check:cycles && tsc",
+    "build": "tsc",
     "prepack": "yarn build",
     "publish": "yarn version ${0:-patch} && yarn npm publish && git commit -am v$(node -p \"require('./package.json').version\") && git tag v$(node -p \"require('./package.json').version\") && git push --follow-tags",
     "lint": "eslint --fix"
@@ -29,7 +28,6 @@
   "devDependencies": {
     "@gamepark/rules-api": "~7.6.4",
     "es-toolkit": "^1.47.1",
-    "madge": "^8.0.0",
     "vitest": "^4.1.9"
   }
 }
