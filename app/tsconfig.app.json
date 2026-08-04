@@ -13,6 +13,7 @@
     "noEmit": true,
     "jsx": "react-jsx",
     "jsxImportSource": "@emotion/react",
+    "types": ["node"],
     "skipLibCheck": true
   },
   "include": ["src"]

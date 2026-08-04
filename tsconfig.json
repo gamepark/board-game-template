@@ -15,7 +15,6 @@
     "strict": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "downlevelIteration": true,
     "skipLibCheck": true,
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true

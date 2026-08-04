@@ -6,7 +6,7 @@
     "lib": [
       "ESNext"
     ],
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "declaration": true,
     "sourceMap": true,
     "declarationMap": true,
@@ -14,5 +14,5 @@
     "rootDir": "src"
   },
   "include": ["src"],
-  "exclude": ["**/*.test.ts"]
+  "exclude": ["**/*.test.ts", "**/*.spec.ts"]
 }

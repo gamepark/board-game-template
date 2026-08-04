@@ -2,13 +2,13 @@ import react from '@vitejs/plugin-react-swc'
 import path from 'path'
 import { defineConfig, loadEnv, PluginOption } from 'vite'
 import { imagetools } from 'vite-imagetools'
-import { version } from './package.json'
+import { version } from './package.json' with { type: 'json' }
 
 function translationHmrPlugin(): PluginOption {
   return {
     name: 'translation-hmr',
     configureServer(server) {
-      const translationDir = path.resolve(__dirname, 'public/translation')
+      const translationDir = path.resolve(import.meta.dirname, 'public/translation')
       let timeout: ReturnType<typeof setTimeout>
       server.watcher.on('change', (file) => {
         if (file.startsWith(translationDir) && file.endsWith('.json')) {
@@ -50,7 +50,7 @@ export default defineConfig(({ mode }) => {
     },
     resolve: {
       alias: {
-        '@gamepark/game-template': path.resolve(__dirname, '../rules/src')
+        '@gamepark/game-template': path.resolve(import.meta.dirname, '../rules/src')
       },
       dedupe: ['react', 'react-dom', 'react-redux', '@dnd-kit/core', '@emotion/react', 'react-i18next']
     },
