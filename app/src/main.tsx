@@ -1,4 +1,4 @@
-import { GameTemplateOptionsSpec } from '@gamepark/game-template/GameTemplateOptions'
+import { GameTemplateOptionsSpecV2 } from '@gamepark/game-template/GameTemplateOptions'
 import { GameTemplateRules } from '@gamepark/game-template/GameTemplateRules'
 import { GameTemplateSetup } from '@gamepark/game-template/GameTemplateSetup'
 import { GameProvider } from '@gamepark/react-game'
@@ -14,7 +14,7 @@ createRoot(document.getElementById('root')!).render(
     <GameProvider
       game="game-template"
       Rules={GameTemplateRules}
-      optionsSpec={GameTemplateOptionsSpec}
+      optionsSpec={GameTemplateOptionsSpecV2}
       GameSetup={GameTemplateSetup}
       material={Material}
       locators={Locators}
