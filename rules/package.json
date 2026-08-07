@@ -18,7 +18,7 @@
     "test": "vitest",
     "build": "tsc",
     "prepack": "yarn build",
-    "publish": "yarn version ${0:-patch} && yarn npm publish && git commit -am v$(node -p \"require('./package.json').version\") && git tag v$(node -p \"require('./package.json').version\") && git push --follow-tags",
+    "publish": "yarn version ${0:-patch} && yarn npm publish ${OTP:+--otp $OTP} && git commit -am v$(node -p \"require('./package.json').version\") && git tag v$(node -p \"require('./package.json').version\") && git push --follow-tags",
     "lint": "eslint --fix"
   },
   "peerDependencies": {
