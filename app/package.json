@@ -13,7 +13,9 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "upload-sourcemaps": "datadog-ci sourcemaps upload dist/assets --service=game-template --release-version=$npm_package_version --minified-path-prefix=/assets/",
-    "sync": "npx rimraf dist/assets/*.map && rclone sync dist game-template:game-template.game-park.com --progress --s3-acl=public-read",
+    "sync:hashed": "rclone sync dist game-template:game-template.game-park.com --progress --s3-acl=public-read --include \"assets/**\" -M --metadata-set \"cache-control=public, max-age=31536000, immutable\"",
+    "sync:other": "rclone sync dist game-template:game-template.game-park.com --progress --s3-acl=public-read --exclude \"assets/**\" -M --metadata-set \"cache-control=no-cache\"",
+    "sync": "npx rimraf dist/assets/*.map && yarn sync:hashed && yarn sync:other",
     "deploy": "yarn build && node -e \"if(process.env.DATADOG_API_KEY){require('child_process').execSync('yarn upload-sourcemaps',{stdio:'inherit'})}\" && yarn sync"
   },
   "dependencies": {
