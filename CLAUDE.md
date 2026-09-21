@@ -126,6 +126,11 @@ getPlayerMoves() {
 }
 ```
 
+### Filter the Material, never loop over indexes
+Keep selections as `Material` (`filter((item, index) => …)`, `id(predicate)`…) and call `moveItems` on
+the result; never `getIndexes().map(i => this.material(X).index(i)…)`. Helpers return `Material`, not
+`number[]`. See `features/item-moves.md#filter-items`.
+
 ### Consequences
 ```typescript
 afterItemMove(move: ItemMove) {
