@@ -195,6 +195,16 @@ Three things do **not** belong in it:
 Read `features/game-options.md` before changing this file — the shape is precise and the platform
 depends on it. Never reintroduce a v1 `OptionsSpec`.
 
+## Backward Compatibility
+
+Saved games store enum values as numbers (`MaterialType`, `LocationType`, `RuleId`, `Memory`, ids…).
+Check the `version` in `rules/package.json`:
+
+- **Below 1.0.0**: the game is not in production. Consistency of the code comes before stable enum
+  values: put a new value where it belongs, renumber freely, rename and restructure.
+- **1.0.0 or above**: backward compatibility wins. Never shift existing values: append new ones at
+  the end, and keep every game already started playable.
+
 ## When Helping
 
 1. **Always read existing code first** before suggesting changes
