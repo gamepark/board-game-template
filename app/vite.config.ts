@@ -1,3 +1,4 @@
+/// <reference types="vitest/config" />
 import react from '@vitejs/plugin-react-swc'
 import path from 'path'
 import { defineConfig, loadEnv, PluginOption } from 'vite'
@@ -47,6 +48,13 @@ export default defineConfig(({ mode }) => {
     },
     server: {
       port: 3000,
+    },
+    test: {
+      server: {
+        deps: {
+          inline: [/@gamepark\//]
+        }
+      }
     },
     resolve: {
       alias: {
