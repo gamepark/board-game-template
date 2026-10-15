@@ -10,9 +10,14 @@ the repo. Ask the developer for its path, and remember it for the project.
 
 - **Resolution: 100 px per cm** of the physical item. Around 127 dpi is enough for large boards: do not
   upscale them.
-- **JPG (quality ~85)** for anything opaque and rectangular (cards, square boards, background). **PNG**
-  only when transparency is needed (meeples, shaped tokens and tiles, die-cut boards), with a baked-in
-  shadow that matches the piece's thickness (below).
+- **WebP for every image, lossless.** The build (`vite-imagetools`) converts each imported image to WebP
+  whatever its source format, so a JPG or a PNG is compressed twice for no gain, and the game ships WebP
+  only, with no fallback. Deliver `.webp`, opaque for anything rectangular (cards, square boards,
+  background), with transparency when the shape needs it (meeples, shaped tokens and tiles, die-cut
+  boards) plus a baked-in shadow that matches the piece's thickness (below).
+- Editing tools are happier with PNG: work in PNG if you like, and convert to lossless WebP to deliver
+  (`Image.open(src).save(dst, lossless=True, method=6)` with Pillow). Lossless WebP is roughly 30 %
+  smaller than the same PNG, pixel for pixel.
 - Trim white borders, and put tiles in reading direction.
 - Organise folders the way existing games do (for example `images/cards/<kind>/`, `images/tokens/`,
   `images/icons/`).
@@ -23,9 +28,9 @@ the repo. Ask the developer for its path, and remember it for the project.
 - List the images you could not find, and ask the developer for them. Do not keep images the adaptation
   will not use (the publisher's logo, files the developer removed on purpose).
 
-## Shadow for PNG material
+## Shadow for transparent material
 
-The shadow is baked into the PNG, with no direction and no offset. Its length and density depend on
+The shadow is baked into the image, with no direction and no offset. Its length and density depend on
 the **physical thickness of the piece**, not on its size: a large cardboard board casts a short shadow,
 while a small wooden meeple casts a thick one.
 
@@ -38,7 +43,7 @@ while a small wooden meeple casts a thick one.
 `#1A1107` (a very dark warm brown) and composites the piece on top:
 
 ```
-python scripts/shadow.py piece.png out.png --kind cardboard|wood [--replace] [--keep-canvas] [--defringe]
+python scripts/shadow.py piece.png out.webp --kind cardboard|wood [--replace] [--keep-canvas] [--defringe]
 ```
 
 Its values are for images at 100 px/cm. They are calibrated on the shadows the developer approved in
@@ -53,7 +58,9 @@ reproduces them to within a few levels of opacity:
 The halo is about the same length in both cases. The wooden piece's shadow is mostly **denser** near the
 piece, because of the dilation. A large player board and a small token get the same shadow.
 
-- `--replace` removes a shadow already baked into a PNG before adding the right one. It is how a bad
+- The output format follows the extension you give it. `.webp` is written losslessly, so it is what you
+  deliver; `.png` stays available for an intermediate step.
+- `--replace` removes a shadow already baked into the image before adding the right one. It is how a bad
   shadow gets fixed without going back to the source file.
 - `--keep-canvas` keeps the image size, so the sizes declared in `MaterialDescription` and the
   coordinates on the piece stay valid. Without it, the canvas grows by the shadow margin, which the script

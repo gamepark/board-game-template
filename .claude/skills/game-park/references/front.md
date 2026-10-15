@@ -119,6 +119,6 @@ with a tooltip, and a click that selects the player (see `PlayerPanelContent` in
 ## Theme and sounds
 
 - Build a custom theme from the rulebook's palette and typography (see zenith, aurealis, greylune
-  `theme/`). Use `background.jpg` as the background image when one exists.
+  `theme/`). Use the game background image when one exists (`background.webp`, or `background.jpg` in the games adapted before WebP became the rule).
 - Set `soundKit` on the descriptions: `SoundKit.Wood` for meeples and markers, and `Coin` for coins. Add a
   custom sound for a signature moment.

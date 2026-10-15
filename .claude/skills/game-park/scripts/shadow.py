@@ -1,6 +1,6 @@
 """Bake the Game Park material shadow into a PNG (images at 100 px/cm).
 
-    python shadow.py piece.png out.png --kind cardboard|wood [--replace] [--keep-canvas] [--defringe]
+    python shadow.py piece.png out.webp --kind cardboard|wood [--replace] [--keep-canvas] [--defringe]
 
 The input is the piece cut out on a transparent background. The shadow has no direction and no offset,
 and its length and density depend on the thickness of the piece, not on its size (see
@@ -115,7 +115,11 @@ def main():
         out_rgb = (rgb * alpha[..., None] + ((1 - alpha) * shadow)[..., None] * COLOR) / out_alpha[..., None]
     out_rgb = np.nan_to_num(out_rgb)
     result = np.dstack([out_rgb, out_alpha * 255]).round().clip(0, 255).astype(np.uint8)
-    Image.fromarray(result, 'RGBA').save(args.output, optimize=True)
+    # WebP is the delivery format: save it losslessly, the game's build does the lossy pass itself
+    if args.output.lower().endswith('.webp'):
+        Image.fromarray(result, 'RGBA').save(args.output, lossless=True, method=6)
+    else:
+        Image.fromarray(result, 'RGBA').save(args.output, optimize=True)
 
 
 if __name__ == '__main__':
