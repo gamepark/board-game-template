@@ -1,0 +1,22 @@
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "plugins": ["typescript", "unicorn", "oxc"],
+  "categories": {
+    "correctness": "error"
+  },
+  "ignorePatterns": ["**/dist/**"],
+  "rules": {
+    "no-unused-vars": ["warn", { "argsIgnorePattern": "^_" }]
+  },
+  "overrides": [
+    {
+      "files": ["app/**/*.{ts,tsx}"],
+      "plugins": ["typescript", "unicorn", "oxc", "react"],
+      "rules": {
+        "react/rules-of-hooks": "error",
+        "react/exhaustive-deps": "warn",
+        "react/only-export-components": ["warn", { "allowConstantExport": true }]
+      }
+    }
+  ]
+}

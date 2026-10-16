@@ -96,6 +96,13 @@ Every game element is an item with a location:
 7. **Add Headers** - Display game text
 8. **Test** - Use `game.new()`, `game.view`, `game.legalMoves` in browser console
 
+## Lint
+
+After changing code, run `yarn lint` at the root alongside the `tsc` check — once per batch of
+changes. It runs **oxlint** (config in `.oxlintrc.json`) and catches what `tsc` cannot, chiefly the
+React hooks rules in `app/` (`rules-of-hooks`, `exhaustive-deps`). Fix its warnings rather than
+silencing them; a disable comment needs a reason.
+
 ## Console Commands (browser)
 
 ```javascript
