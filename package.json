@@ -22,5 +22,5 @@
     "linkgp": "yarn link ../rules-api ../react-client ../react-game -r && git update-index --skip-worktree package.json yarn.lock",
     "unlinkgp": "git update-index --no-skip-worktree package.json yarn.lock && yarn unlink ../react-game ../react-client ../rules-api"
   },
-  "packageManager": "yarn@4.18.0"
+  "packageManager": "yarn@4.18.1"
 }
