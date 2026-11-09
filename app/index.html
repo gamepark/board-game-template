@@ -11,6 +11,15 @@
   </head>
   <body>
     <div id="root"></div>
+    <script nomodule>
+      // Browsers without ES modules (Internet Explorer...) skip the game bundle entirely: explain it instead of a black screen
+      var fr = /^fr/i.test(navigator.language || navigator.userLanguage || '');
+      document.body.style.background = '#222';
+      document.getElementById('root').innerHTML = '<p style="color:#fff;font-family:sans-serif;font-size:1.2em;padding:2em;text-align:center">'
+        + (fr ? 'Votre navigateur est trop ancien pour afficher ce jeu. Utilisez une version récente de Chrome, Firefox, Edge ou Safari.'
+          : 'Your browser is too old to display this game. Please use an up-to-date version of Chrome, Firefox, Edge or Safari.')
+        + '</p>';
+    </script>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
