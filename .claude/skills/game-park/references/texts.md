@@ -33,10 +33,55 @@ See the docs first: `step-by-step-example/write-the-headers.md`, `help-dialogs.m
   be used because of that rule, add a padlock button on the item that recalls the rule (only when the item
   would be usable without it).
 
-## Tutorial
+## Tutorial script
 
-- **The developer writes the scenario.** One line of it = one tutorial step. Improve the wording, add bold
-  and icons, but keep the content. When asked for "just the texts", deliver only the texts.
+Write the whole scenario in a `script-tuto.txt` at the root of the repo, and get it approved **before any
+tutorial code**. It stays committed as the brief of the tutorial. Read `../paper-tales/script-tuto.txt` (coded:
+see its `app/src/tutorial/`) and `../sur-les-traces-de-darwin/script-tuto.txt` (forced setup and moves).
+
+The file has three parts:
+
+1. **The brief to code it**, in a few lines: the game, the player count and options, "random deal except what the
+   scenario needs", how the opponents play, and "improve the texts from the rulebook, add bold and icons".
+2. **The forced setup**, when the scenario depends on positions: exact places, and what the random items must not be.
+3. **The steps.** A block between two blank lines is one popup, in its final wording, with `**bold**` and the
+   `<icon/>` tags of the translation file. A line in parentheses is a stage direction, not a text: the focus, the move
+   imposed, what happens automatically, what the opponent plays.
+
+```
+Placez le **Chasseur** à l'Avant : il ne produit <food/> que s'il est à l'Avant.
+(Chasseur, Avant)
+```
+
+**Designing the scenario:**
+
+- **Script only what teaches.** Cover each phase or each concept once, then let the player finish the game against
+  the bot: one full turn in paper-tales (6 phases), 4 turns of the player in darwin (one new concept per turn). End with
+  the help reminder, then a sentence that hands over the game.
+- **Explain a rule at the moment it happens**, with the numbers of the current situation ("Force 3 + 2 = **5**"). The
+  Beagle's distance was first announced a turn too early, and moved to the moment the Beagle moves.
+- **Never rely on a notion not yet introduced**: to say "upgrade a building", first say it is possible and what it costs.
+- **Name the item in each instruction**: "Select the Farmer", never "Select this card".
+- **Do not offer a choice the player does not have**, and leave a real one where it is harmless (a free pick, the
+  building of their choice).
+- **Leave rare rules to the help dialogs**, and check that they are there (a limit of 6 Theories that almost never
+  matters).
+- **Choose how the opponents play.** Let the bot play when the scenario survives any of its moves, and only keep the
+  scenario's cards away from it (paper-tales). Impose its moves when they change what the player can do next (darwin).
+- **Close what chance can break**: reserve the scenario's items, and keep out what would derail it. Paper-tales keeps
+  the cards that ask an opponent for a choice in the deck. Darwin forbids the tiles that would give the opponent a Theory
+  or the Darwin token.
+
+**Before you hand it over, replay the scenario on the code.** Check every position, cost, gain and list of legal
+options the text states. A building announced as affordable was not, because reaching level 2 directly costs the sum of
+both levels. Report what you could not check.
+
+**The developer rewrites the script.** Read the file again before each edit, and keep their changes.
+
+## Tutorial texts
+
+- **Keep the content of the approved script.** Improve the wording, add bold and icons. When asked for "just the
+  texts", deliver only the texts.
 - **House tone: plain and direct.** The developer rejected every literary flourish ("and that is what decides
   the game", "But a back is not silent"). Read two or three existing tutorials (leda, aurealis,
   odysseus) before writing.
@@ -50,8 +95,9 @@ See the docs first: `step-by-step-example/write-the-headers.md`, `help-dialogs.m
   element to learn what it does").
 - Randomise the setup as much as possible, and fix only what the script needs in `TutorialSetup`. Name the
   opponent after the author, with an avatar.
-- Test the tutorial in vitest: play the script to the end with `wrapRulesWithTutorial`. A step that waits
-  for a move that the random setup sometimes does not allow blocks the tutorial.
+- Test the tutorial in vitest with `wrapRulesWithTutorial` (see `paper-tales/app/src/tutorial/Tutorial.test.ts`): play
+  the script to the end over many random deals, because a step that waits for a move the deal does not allow blocks
+  the tutorial. Also assert what the texts state (gold, legal options, where the cards end up).
 
 ## Typography and ICU
 
@@ -65,6 +111,8 @@ See the docs first: `step-by-step-example/write-the-headers.md`, `help-dialogs.m
 
 ## Translation pass (before release, when asked)
 
+- Translate both `app/public/translation/` and `app/public/options/` into the 6 languages: `en`, `fr`, `de`, `es`,
+  `it` and `ru`.
 - English: take the glossary from `rules-en.pdf`. Other languages: translate the original rulebook's
   wording as closely as possible.
 - When the developer edits a text, carry the change over to every other locale.

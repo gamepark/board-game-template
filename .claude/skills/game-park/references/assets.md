@@ -10,7 +10,7 @@ the repo. Ask the developer for its path, and remember it for the project.
 
 - **Resolution: 100 px per cm** of the physical item. Around 127 dpi is enough for large boards: do not
   upscale them.
-- **Lossless WebP for every image.** Keep it opaque for anything rectangular (cards, square boards,
+- **Lossless WebP for every image imported from `app/src`.** Keep it opaque for anything rectangular (cards, square boards,
   background). Use transparency when the shape needs it (meeples, shaped tokens and tiles, die-cut boards),
   with a baked-in shadow that matches the piece's thickness (below) and `transparency = true` in the
   description.
@@ -25,6 +25,21 @@ the repo. Ask the developer for its path, and remember it for the project.
   Fix them before you deliver.
 - List the images you could not find, and ask the developer for them. Do not keep images the adaptation
   will not use (the publisher's logo, files the developer removed on purpose).
+
+## Cover, box and icon in `app/public`
+
+The template holds placeholders: replace each file and keep its exact name and size. These files are not imported, so
+the build does not convert them, and the framework reads `/box-640.png` and `/cover-1920.jpg` by name.
+
+| Image | Files | Size |
+|-------|-------|------|
+| Cover | `cover-1920.jpg`, `cover-1920.webp` | 1920 × 1080 |
+| Box, on a transparent background | `box-640.png`, `box-640.webp` | 640 × 640 |
+| Icon | `avatar-320.png`, `avatar-96.png`, `avatar-64.png` | square |
+| Favicon, made from the icon | `favicon.ico`, `favicon-96x96.png`, `favicon.svg` | 96 × 96 for the PNG |
+
+Crop to the ratio rather than stretching. `app/index.html` links the three favicons: if there is no `favicon.svg`,
+remove its link rather than leaving the template's icon.
 
 ## Shadow for transparent material
 

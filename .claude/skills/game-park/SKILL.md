@@ -30,6 +30,7 @@ practices:
 - **panorama**: a bot that samples hidden tiles and simulates its opponents.
 - **leda**: hidden information, the tutorial, and replay compatibility.
 - **aurealis**: the tutorial, icons in help dialogs, and `MaterialMoney`.
+- **paper-tales**, **sur-les-traces-de-darwin**: the tutorial script (`script-tuto.txt`).
 - **odysseus**, **chateau-combo**, **captain-flip**, **faraway**, **skyrift**, **mythologies**, **zenith**.
 
 ## The order that works
@@ -42,7 +43,7 @@ practices:
 4. Propose the `RuleId` enum for review. Once approved, implement all the rules in one go, with unit tests
    and random full-game simulations.
 5. Headers, then buttons and UX phase by phase, then help dialogs and the theme.
-6. Bot, tutorial, logs, final scoring, `giveTime`, sounds, and finally translations.
+6. Bot, tutorial script then tutorial, logs, final scoring, `giveTime`, sounds, and finally translations.
 7. Before a release, go through the official `step-by-step-example/checklist.md`.
 
 The rules converge quickly. The front end takes many small, precise rounds of feedback: apply each one
