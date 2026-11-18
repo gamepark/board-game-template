@@ -58,7 +58,8 @@ See the docs first: `step-by-step-example/write-the-headers.md`, `help-dialogs.m
 - The texts are ICU messages: a `'` right before `{`, `}` or `<` opens a quoted literal and disappears
   (`l'<strong>Éveil</strong>` loses its apostrophe). Move the apostrophe inside the tag
   (`<strong>l'Éveil</strong>`), or use the typographic `’`.
-- In French, put a non-breaking space before `: ; ? !`, or the punctuation wraps to the next line alone.
+- In French, put a non-breaking space before `: ; ? ! »` and after `«`, or the punctuation wraps to the next
+  line alone.
 - A key that shows up as "Missing key: leda|<the French text>" means the text was passed as `defaults`
   without a key, or the key is missing from that locale.
 

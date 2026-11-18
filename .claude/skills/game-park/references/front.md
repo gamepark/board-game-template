@@ -2,7 +2,7 @@
 
 See the docs first: `step-by-step-example/place-items.md` and `organize-the-table.md`,
 `features/lists-of-items.md`, `piles-of-items.md`, `hand-of-cards.md`, `display-a-location.md`,
-`buttons-on-items.md`, `configure-the-animations.md`, `final-scoring.md`, `moves-history.md`,
+`buttons-on-items.md`, `hover-items.md`, `configure-the-animations.md`, `final-scoring.md`, `moves-history.md`,
 `troubleshooting/*`.
 
 ## Table layout
@@ -75,14 +75,14 @@ See the docs first: `step-by-step-example/place-items.md` and `organize-the-tabl
 
 ## Hover
 
-- Cards zoom on hover (`getHoverTransform`, around ×2). Pick the transform origin so the zoom stays on screen
-  (left-aligned on the left edge, right-aligned on the right edge).
+- Cards zoom on hover, around ×2, and are pushed back inside the table at its edges (see
+  `greylune/app/src/locators/CardHover.ts`).
 - A player's own face-down card can turn face up on hover. Turn this off while an animation plays on it.
 
 ## Animations
 
-- Set the durations in `MaterialGameAnimations`: 0.2 to 0.5 s for most moves, and faster for gains that
-  repeat. When the developer gives a figure, use it.
+- Set the durations with `configure(…).duration(ms)`: 200 to 500 ms for most moves, and faster for gains
+  that repeat. When the developer gives a figure, use it.
 - A flat card that rotates gets no elevation.
 - **Hidden players' areas.** Skip every animation that starts and ends inside an area that is not
   displayed. A move between the shared area and a hidden player goes through **a waypoint behind that
@@ -119,6 +119,6 @@ with a tooltip, and a click that selects the player (see `PlayerPanelContent` in
 ## Theme and sounds
 
 - Build a custom theme from the rulebook's palette and typography (see zenith, aurealis, greylune
-  `theme/`). Use the game background image when one exists (`background.webp`, or `background.jpg` in the games adapted before WebP became the rule).
+  `theme/`). Use the game background image when one exists.
 - Set `soundKit` on the descriptions: `SoundKit.Wood` for meeples and markers, and `Coin` for coins. Add a
   custom sound for a signature moment.

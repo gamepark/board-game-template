@@ -10,14 +10,12 @@ the repo. Ask the developer for its path, and remember it for the project.
 
 - **Resolution: 100 px per cm** of the physical item. Around 127 dpi is enough for large boards: do not
   upscale them.
-- **WebP for every image, lossless.** The build (`vite-imagetools`) converts each imported image to WebP
-  whatever its source format, so a JPG or a PNG is compressed twice for no gain, and the game ships WebP
-  only, with no fallback. Deliver `.webp`, opaque for anything rectangular (cards, square boards,
-  background), with transparency when the shape needs it (meeples, shaped tokens and tiles, die-cut
-  boards) plus a baked-in shadow that matches the piece's thickness (below).
-- Editing tools are happier with PNG: work in PNG if you like, and convert to lossless WebP to deliver
-  (`Image.open(src).save(dst, lossless=True, method=6)` with Pillow). Lossless WebP is roughly 30 %
-  smaller than the same PNG, pixel for pixel.
+- **Lossless WebP for every image.** Keep it opaque for anything rectangular (cards, square boards,
+  background). Use transparency when the shape needs it (meeples, shaped tokens and tiles, die-cut boards),
+  with a baked-in shadow that matches the piece's thickness (below) and `transparency = true` in the
+  description.
+- Editing tools are happier with PNG: work in PNG if you like, and convert to deliver
+  (`Image.open(src).save(dst, lossless=True, method=6)` with Pillow).
 - Trim white borders, and put tiles in reading direction.
 - Organise folders the way existing games do (for example `images/cards/<kind>/`, `images/tokens/`,
   `images/icons/`).

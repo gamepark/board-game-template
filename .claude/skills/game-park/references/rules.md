@@ -116,15 +116,3 @@ the item?"
 - To test a hidden-information game, compare `getView`/`getMoveView` with the result of applying the moves.
   The console error "the view is not the same when moveViews are applied" points at a hiding strategy or
   at memory that differs between client and server.
-
-## Tutorial AI
-
-See `features/tutorial-ai.md`. What worked:
-
-- The developer states heuristics in plain words. Implement them **literally** (such as "never move a pawn
-  backwards; always advance the pawn closest to the first incomplete card") instead of inventing a scoring.
-- Forbid dumb strategies in general, not case by case (covering your own cards, ending a phase with idle
-  workers, choosing an unusable option).
-- Aim for synergies and a resource balance (gold above a threshold is worth little).
-- Tune it on the states the developer points to ("the game in my localStorage on 3000"), and never destroy
-  those states.

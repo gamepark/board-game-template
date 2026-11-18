@@ -94,7 +94,7 @@ Every game element is an item with a location:
 5. **Configure Material.ts** - Sizes and images
 6. **Create Locators** - Position items on screen
 7. **Add Headers** - Display game text
-8. **Test** - Use `game.new()`, `game.view`, `game.legalMoves` in browser console
+8. **Test** - Use `game.new()`, `game.state`, `game.moves` in browser console
 
 ## Lint
 
@@ -107,8 +107,8 @@ silencing them; a disable comment needs a reason.
 
 ```javascript
 game.new(playerCount)    // Start new game
-game.view                // Current game state
-game.legalMoves          // Available moves
+game.state               // Current game state
+game.moves               // Moves played since the start
 game.undo()              // Undo last move
 game.monkeyOpponents(true) // Auto-play opponents
 ```
